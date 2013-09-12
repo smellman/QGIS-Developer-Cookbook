@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-12 12:01\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-09-12 12:03+ZONE\n"
+"Last-Translator: Taro Matsuzawa <taro@georepublic.co.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,12 +19,12 @@ msgstr ""
 #: ../source/intro.rst:5
 # 90ef6d098cc34c2f85f3c734712aa788
 msgid "Introduction"
-msgstr ""
+msgstr "はじめに"
 
 #: ../source/intro.rst:7
 # c00b4d3338eb4f76925ce3f9add22c0a
 msgid "This document is intended to work both as a tutorial and a reference guide. While it does not list all possible use cases, it should give a good overview of the principal functionality."
-msgstr ""
+msgstr "このドキュメントはチュートリアルとリファレンスガイドの両方の役割を意図して書かれています。すべてのユースケースを満たしてはいませんが、主要な機能の良い概要となるでしょう。 "
 
 #: ../source/intro.rst:11
 # c3f72bd769ca4bf39ce2be3b0162c4df
