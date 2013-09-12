@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # a2137ff883224b70a1c76b9517e059cd
-#: ../source/settings.rst:5
+#: ../../source/settings.rst:5
 msgid "Reading And Storing Settings"
 msgstr ""
 
 # fb7dda7464a04411b0243bc550a20174
-#: ../source/settings.rst:7
+#: ../../source/settings.rst:7
 msgid ""
 "Many times it is useful for a plugin to save some variables so that the user "
 "does not have to enter or select them again next time the plugin is run."
 msgstr ""
 
 # 31e1e4f6c2534809b214100802e8c5fb
-#: ../source/settings.rst:9
+#: ../../source/settings.rst:9
 msgid ""
 "These variables can be saved a retrieved with help of Qt and QGIS API. For "
 "each variable, you should pick a key that will be used to access the "
@@ -40,12 +40,12 @@ msgid ""
 msgstr ""
 
 # d139135789174eae9784d764027d1cf5
-#: ../source/settings.rst:13
+#: ../../source/settings.rst:13
 msgid "We can make difference between several types of settings:"
 msgstr ""
 
 # e63b18a74ed344fc816a571de3e2f458
-#: ../source/settings.rst:15
+#: ../../source/settings.rst:15
 msgid ""
 "**global settings** - they are bound to the user at particular machine. QGIS "
 "itself stores a lot of global settings, for example, main window size or "
@@ -58,7 +58,7 @@ msgid ""
 msgstr ""
 
 # 129fd492304d4c85aa478e82c14c80d8
-#: ../source/settings.rst:32
+#: ../../source/settings.rst:32
 msgid ""
 "Qt uses QVariant instances for variable values in setValue() and value() "
 "methods. Your values are automagically converted from Python to QVariant "
@@ -67,19 +67,19 @@ msgid ""
 msgstr ""
 
 # 545aedbed4004e4cb899b8128fef39dd
-#: ../source/settings.rst:35
+#: ../../source/settings.rst:35
 msgid ""
 "the second parameter to value() method is optional and states the default "
 "value if there is no previous value set"
 msgstr ""
 
 # 0e38149117a043f68930b7dbac4ab508
-#: ../source/settings.rst:36
+#: ../../source/settings.rst:36
 msgid "toString() returns a QString instance, not a Python string"
 msgstr ""
 
 # 119f7e4567d34bee8c185ab09730127f
-#: ../source/settings.rst:37
+#: ../../source/settings.rst:37
 msgid ""
 "toInt() and toDouble() return tuples (value, ok) - the second item indicates "
 "True if whether the conversion from QVariant to the number went fine - in "
@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 
 # 650ffe7a02fc4d78b92b59c41419699a
-#: ../source/settings.rst:41
+#: ../../source/settings.rst:41
 msgid ""
 "**project settings** vary between different projects and therefore they are "
 "connected with a project file. Map canvas background or destination "
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 
 # 04e7cf4688e24ccc93991460ca16d447
-#: ../source/settings.rst:55
+#: ../../source/settings.rst:55
 msgid ""
 "Hopefully the QgsProject class will be updated in future to provide API "
 "similar to the one of QSettings class. Due to some limitations of Python "
@@ -105,7 +105,7 @@ msgid ""
 msgstr ""
 
 # 73621b4b44e14a7f8d7d39699a66f54c
-#: ../source/settings.rst:58
+#: ../../source/settings.rst:58
 msgid ""
 "**map layer settings** - these settings are related to a particular instance "
 "of a map layer with a project. They are *not* connected with underlying data "
@@ -118,11 +118,11 @@ msgid ""
 msgstr ""
 
 # a6c4bc740d9446b6859b902ad460e5f0
-#: ../source/settings.rst:70
+#: ../../source/settings.rst:70
 msgid "**TODO:**"
 msgstr ""
 
 # 8362d2346a3c46f6b22fa3f71db3bdf2
-#: ../source/settings.rst:71
+#: ../../source/settings.rst:71
 msgid "Keys for settings that can be shared among plugins"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,31 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # 19b01f14f88042fcbedd8624e7e07241
-#: ../source/index.rst:7
+#: ../../source/index.rst:7
 msgid "PyQGIS Developer Cookbook"
 msgstr ""
 
 # 9f8e1c3764334135bf3a4fca674fa8c9
-#: ../source/index.rst:9
+#: ../../source/index.rst:9
 msgid "Contents:"
 msgstr ""
 
 # a92d4b594cca4f2cb8af2315b848d7a9
-#: ../source/index.rst:29
+#: ../../source/index.rst:29
 msgid "Indices and tables"
 msgstr ""
 
 # 9ca7c38dbd2143f8923fbf78da77d4ad
-#: ../source/index.rst:31
+#: ../../source/index.rst:31
 msgid ":ref:`genindex`"
 msgstr ""
 
 # 45ea6433275747b1a836623bd1a37e30
-#: ../source/index.rst:32
+#: ../../source/index.rst:32
 msgid ":ref:`modindex`"
 msgstr ""
 
 # 50d9243dbe164bdbb876b875b53e9b18
-#: ../source/index.rst:33
+#: ../../source/index.rst:33
 msgid ":ref:`search`"
 msgstr ""

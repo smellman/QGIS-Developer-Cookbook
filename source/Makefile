@@ -5,7 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
-BUILDDIR      = ..
+BUILDDIR      = ../build
 lang          = en
 
 # Internal variables.

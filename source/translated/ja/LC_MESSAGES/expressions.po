@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # b3bf437bc71d4c99853ac35ce3f7b636
-#: ../source/expressions.rst:5
+#: ../../source/expressions.rst:5
 msgid "Expressions, Filtering and Calculating Values"
 msgstr ""
 
 # 65a375f301844facbda60a3c6be1a28c
-#: ../source/expressions.rst:7
+#: ../../source/expressions.rst:7
 msgid ""
 "QGIS has some support for parsing of SQL-like expressions. Only a small "
 "subset of SQL syntax is supported. The expressions can be evaluated either "
@@ -32,160 +32,160 @@ msgid ""
 msgstr ""
 
 # 2111ec02c8c547909639346ffd86e406
-#: ../source/expressions.rst:10
+#: ../../source/expressions.rst:10
 msgid "Three basic types are supported:"
 msgstr ""
 
 # 019a2a3269104ea19829555cb09265eb
-#: ../source/expressions.rst:12
+#: ../../source/expressions.rst:12
 msgid ""
 "number --- both whole numbers and decimal numbers, e.g. ``123``, ``3.14``"
 msgstr ""
 
 # 554f6bf240e54d34b4a5a468fc60314b
-#: ../source/expressions.rst:13
+#: ../../source/expressions.rst:13
 msgid "string --- they have to be enclosed in single quotes: ``'hello world'``"
 msgstr ""
 
 # 24b1e65b585b45a4802150f804ea7d86
-#: ../source/expressions.rst:14
+#: ../../source/expressions.rst:14
 msgid ""
 "column reference --- when evaluating, the reference is substituted with the "
 "actual value of the field. The names are not escaped."
 msgstr ""
 
 # 9accad96e9fd47d3b6cdcda8095630d7
-#: ../source/expressions.rst:16
+#: ../../source/expressions.rst:16
 msgid "The following operations are available:"
 msgstr ""
 
 # 34323f5d70e840d58d5131ba70d65f25
-#: ../source/expressions.rst:18
+#: ../../source/expressions.rst:18
 msgid "arithmetic operators: ``+``, ``-``, ``*``, ``/``, ``^``"
 msgstr ""
 
 # af7efdae4b6b4149a81964a6a3eae26a
-#: ../source/expressions.rst:19
+#: ../../source/expressions.rst:19
 msgid "parentheses: for enforcing the operator precedence: ``(1 + 1) * 3``"
 msgstr ""
 
 # b17d73a87300485e8a6406f76971dfe5
-#: ../source/expressions.rst:20
+#: ../../source/expressions.rst:20
 msgid "unary plus and minus: ``-12``, ``+5``"
 msgstr ""
 
 # 8f46dcd416a4438b93f4da47e5b62e5b
-#: ../source/expressions.rst:21
+#: ../../source/expressions.rst:21
 msgid ""
 "mathematical functions: ``sqrt``, ``sin``, ``cos``, ``tan``, ``asin``, "
 "``acos``, ``atan``"
 msgstr ""
 
 # 341114d6fbfd4850ab6df1195cfda86a
-#: ../source/expressions.rst:22
+#: ../../source/expressions.rst:22
 msgid "geometry functions: ``$area``, ``$length``"
 msgstr ""
 
 # c6ad40dbce6c4b8d9747581420798f30
-#: ../source/expressions.rst:23
+#: ../../source/expressions.rst:23
 msgid "conversion functions: ``to int``, ``to real``, ``to string``"
 msgstr ""
 
 # 962f419b2b3b4869b785d69b9f4911aa
-#: ../source/expressions.rst:25
+#: ../../source/expressions.rst:25
 msgid "And following predicates are supported:"
 msgstr ""
 
 # 133208315b2e42c39827bb97e81518c6
-#: ../source/expressions.rst:27
+#: ../../source/expressions.rst:27
 msgid "comparison: ``=``, ``!=``, ``>``, ``>=``, ``<``, ``<=``"
 msgstr ""
 
 # 81a79f6d103e427f954b7cccf3f314af
-#: ../source/expressions.rst:28
+#: ../../source/expressions.rst:28
 msgid "pattern matching: ``LIKE`` (using % and _), ``~`` (regular expressions)"
 msgstr ""
 
 # 48faa8c71df844309f78de1c445e1f6f
-#: ../source/expressions.rst:29
+#: ../../source/expressions.rst:29
 msgid "logical predicates: ``AND``, ``OR``, ``NOT``"
 msgstr ""
 
 # d3794f9ef11a4b39971fbc2fc7befbd2
-#: ../source/expressions.rst:30
+#: ../../source/expressions.rst:30
 msgid "NULL value checking: ``IS NULL``, ``IS NOT NULL``"
 msgstr ""
 
 # 42b5e96102d8454ca036c08eaee3911a
-#: ../source/expressions.rst:32
+#: ../../source/expressions.rst:32
 msgid ""
 "**Compatibility note:** mathematical, geometry, conversion functions and "
 "power operator ``^`` are available from QGIS 1.4."
 msgstr ""
 
 # dd73a1cde9754432a5d806b4096347dd
-#: ../source/expressions.rst:34
+#: ../../source/expressions.rst:34
 msgid "Examples of predicates:"
 msgstr ""
 
 # 55e55739a8884e63b57045260b3ad2d7
-#: ../source/expressions.rst:36
+#: ../../source/expressions.rst:36
 msgid "``1 + 2 = 3``"
 msgstr ""
 
 # ab00443182e54bf7aa9adb44ca2fbe84
-#: ../source/expressions.rst:37
+#: ../../source/expressions.rst:37
 msgid "``sin(angle) > 0``"
 msgstr ""
 
 # 9fe6d507d5e546eea3890cdfeec0bf18
-#: ../source/expressions.rst:38
+#: ../../source/expressions.rst:38
 msgid "``'Hello' LIKE 'He%'``"
 msgstr ""
 
 # 54769077c9f84aaeaab518e403da9768
-#: ../source/expressions.rst:39
+#: ../../source/expressions.rst:39
 msgid "``(x > 10 AND y > 10) OR z = 0``"
 msgstr ""
 
 # 7191d954716f4933849e376a828f779c
-#: ../source/expressions.rst:41
+#: ../../source/expressions.rst:41
 msgid "Examples of scalar expressions:"
 msgstr ""
 
 # 29a585b40b2945a49060546b83248eea
-#: ../source/expressions.rst:43
+#: ../../source/expressions.rst:43
 msgid "``2 ^ 10``"
 msgstr ""
 
 # 5ae39ad343214f21831fced96be25653
-#: ../source/expressions.rst:44
+#: ../../source/expressions.rst:44
 msgid "``sqrt(val)``"
 msgstr ""
 
 # 52160f43532545a89df7604afcd1995a
-#: ../source/expressions.rst:45
+#: ../../source/expressions.rst:45
 msgid "``$length + 1``"
 msgstr ""
 
 # 51cd392b388c47dcb7a319d1719be5d3
-#: ../source/expressions.rst:49
+#: ../../source/expressions.rst:49
 msgid "Parsing Expressions"
 msgstr ""
 
 # aad4ae6198cf465684e1302b41296961
-#: ../source/expressions.rst:52
+#: ../../source/expressions.rst:52
 msgid "**TODO:** parsing, error handling"
 msgstr ""
 
 # 2b154f6edecf4793827b96705e380289
-#: ../source/expressions.rst:64
+#: ../../source/expressions.rst:64
 msgid ""
 "**TODO:** working with the tree, evaluation as a predicate, as a function, "
 "error handling"
 msgstr ""
 
 # aa2b458b640f403584ad58b21ab14e13
-#: ../source/expressions.rst:67
+#: ../../source/expressions.rst:67
 msgid "Evaluating Expressions"
 msgstr ""

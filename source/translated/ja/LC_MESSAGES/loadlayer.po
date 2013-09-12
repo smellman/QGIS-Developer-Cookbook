@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # 9e364accdf3944a2a37947c6f8b238cc
-#: ../source/loadlayer.rst:5
+#: ../../source/loadlayer.rst:5
 msgid "Loading Layers"
 msgstr ""
 
 # c5b785cf07f945e9961e11997809f49e
-#: ../source/loadlayer.rst:7
+#: ../../source/loadlayer.rst:7
 msgid ""
 "Let's open some layers with data. QGIS recognizes vector and raster layers. "
 "Additionally, custom layer types are available, but we are not going to "
@@ -31,19 +31,19 @@ msgid ""
 msgstr ""
 
 # 8f8f88b8d6b2437880e96c301c9e0643
-#: ../source/loadlayer.rst:11
+#: ../../source/loadlayer.rst:11
 msgid "Vector Layers"
 msgstr ""
 
 # e9c9bfa615a14945be46b786b78e8d1a
-#: ../source/loadlayer.rst:13
+#: ../../source/loadlayer.rst:13
 msgid ""
 "To load a vector layer, specify layer's data source identifier, name for the "
 "layer and provider's name::"
 msgstr ""
 
 # 05d24cff15224fed8c81db71a82ff0ed
-#: ../source/loadlayer.rst:19
+#: ../../source/loadlayer.rst:19
 msgid ""
 "The data source identifier is a string and it is specific to each vector "
 "data provider. Layer's name is used in the layer list widget. It is "
@@ -52,21 +52,21 @@ msgid ""
 msgstr ""
 
 # 8b562140ee0a4ab3863b8fcaeb397b3e
-#: ../source/loadlayer.rst:22
+#: ../../source/loadlayer.rst:22
 msgid ""
 "The following list shows how to access various data sources using vector "
 "data providers:"
 msgstr ""
 
 # f87aa6b8d34c401b9f04c54cd02d76a0
-#: ../source/loadlayer.rst:24
+#: ../../source/loadlayer.rst:24
 msgid ""
 "OGR library (shapefiles and many other file formats) - data source is the "
 "path to the file::"
 msgstr ""
 
 # 18bb775d61094949b79d817cf14efda8
-#: ../source/loadlayer.rst:28
+#: ../../source/loadlayer.rst:28
 msgid ""
 "PostGIS database - data source is a string with all information needed to "
 "create a connection to PostgreSQL database. :class:`QgsDataSourceURI` class "
@@ -75,7 +75,7 @@ msgid ""
 msgstr ""
 
 # f320acc4dfc34753807ad4aee5ceb91e
-#: ../source/loadlayer.rst:40
+#: ../../source/loadlayer.rst:40
 msgid ""
 "CSV or other delimited text files - to open a file with a semicolon as a "
 "delimiter, with field \"x\" for x-coordinate and field \"y\" with y-"
@@ -83,7 +83,7 @@ msgid ""
 msgstr ""
 
 # 5625e22a4c6c401683da69eedd87cf16
-#: ../source/loadlayer.rst:45
+#: ../../source/loadlayer.rst:45
 msgid ""
 "Note: from QGIS version 1.7 the provider string is structured as a URL, so "
 "the path must be prefixed with *file://*. Also it allows WKT (well known "
@@ -92,7 +92,7 @@ msgid ""
 msgstr ""
 
 # 8a1a16ccc33e41c489c34289f46761c0
-#: ../source/loadlayer.rst:53
+#: ../../source/loadlayer.rst:53
 msgid ""
 "GPX files - the \"gpx\" data provider reads tracks, routes and waypoints "
 "from gpx files. To open a file, the type (track/route/waypoint) needs to be "
@@ -100,7 +100,7 @@ msgid ""
 msgstr ""
 
 # e4d54a4167c04b908b3338764b388c7c
-#: ../source/loadlayer.rst:58
+#: ../../source/loadlayer.rst:58
 msgid ""
 "SpatiaLite database - supported from QGIS v1.1. Similarly to PostGIS "
 "databases, :class:`QgsDataSourceURI` can be used for generation of data "
@@ -108,19 +108,19 @@ msgid ""
 msgstr ""
 
 # 997304ee47be464e99123e642208fd44
-#: ../source/loadlayer.rst:66
+#: ../../source/loadlayer.rst:66
 msgid ""
 "MySQL WKB-based geometries, through OGR - data source is the connection "
 "string to the table::"
 msgstr ""
 
 # 0b08fd2293f44e6ba01abce82bd96206
-#: ../source/loadlayer.rst:73
+#: ../../source/loadlayer.rst:73
 msgid "Raster Layers"
 msgstr ""
 
 # f2a91546cca74a45915150f80b6440f8
-#: ../source/loadlayer.rst:75
+#: ../../source/loadlayer.rst:75
 msgid ""
 "For accessing raster files, GDAL library is used. It supports a wide range "
 "of file formats. In case you have troubles with opening some files, check "
@@ -130,7 +130,7 @@ msgid ""
 msgstr ""
 
 # e162e26f0c5541eabb1968aa216425a7
-#: ../source/loadlayer.rst:86
+#: ../../source/loadlayer.rst:86
 msgid ""
 "Alternatively you can load a raster layer from WMS server. However currently "
 "it's not possible to access GetCapabilities response from API - you have to "
@@ -138,12 +138,12 @@ msgid ""
 msgstr ""
 
 # 4e8c4b8d5b634d57931bf4c8ed73bec7
-#: ../source/loadlayer.rst:99
+#: ../../source/loadlayer.rst:99
 msgid "Map Layer Registry"
 msgstr ""
 
 # 5882ab57ab7d49c89581f3dc1936541a
-#: ../source/loadlayer.rst:101
+#: ../../source/loadlayer.rst:101
 msgid ""
 "If you would like to use the opened layers for rendering, do not forget to "
 "add them to map layer registry. The map layer registry takes ownership of "
@@ -153,23 +153,23 @@ msgid ""
 msgstr ""
 
 # 1507e77122c24ab8bd46d2ed260e9bd7
-#: ../source/loadlayer.rst:104
+#: ../../source/loadlayer.rst:104
 msgid "Adding a layer to the registry::"
 msgstr ""
 
 # 1c4fb9f5d577431296f14433d2cc12f2
-#: ../source/loadlayer.rst:108
+#: ../../source/loadlayer.rst:108
 msgid ""
 "Layers are destroyed automatically on exit, however if you want to delete "
 "the layer explicitly, use::"
 msgstr ""
 
 # 598a61dc036d4a7aaf7fe3a46b752309
-#: ../source/loadlayer.rst:113
+#: ../../source/loadlayer.rst:113
 msgid "**TODO:**"
 msgstr ""
 
 # 16fc3f35063d49c7b7663e14808cdb92
-#: ../source/loadlayer.rst:114
+#: ../../source/loadlayer.rst:114
 msgid "More about map layer registry?"
 msgstr ""

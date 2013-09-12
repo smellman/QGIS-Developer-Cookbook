@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # 42ec09eb02c8438985811170f69e1950
-#: ../source/vector.rst:5
+#: ../../source/vector.rst:5
 msgid "Using Vector Layers"
 msgstr ""
 
 # a6a13c635e1849b3a372c853bb419e8c
-#: ../source/vector.rst:7
+#: ../../source/vector.rst:7
 msgid ""
 "This section summarizes various actions that can be done with vector layers."
 msgstr ""
@@ -31,22 +31,23 @@ msgstr ""
 # d5f3143962904fd1b026c6fae626aa09
 # 91f03cf9f1cb45188be9a786c33cbc3d
 # f2265312058b446cbb7b6bbcc82284de
-#: ../source/vector.rst:10 ../source/vector.rst:93 ../source/vector.rst:602
+#: ../../source/vector.rst:10 ../../source/vector.rst:93
+#: ../../source/vector.rst:602
 msgid "**TODO:**"
 msgstr ""
 
 # c1df446782f64bc3b76048e128529d78
-#: ../source/vector.rst:10
+#: ../../source/vector.rst:10
 msgid "Editing, Layer vs. Data provider, ..."
 msgstr ""
 
 # ae3caa4e5b0a47149d5735c47b8eb30a
-#: ../source/vector.rst:13
+#: ../../source/vector.rst:13
 msgid "Iterating over Vector Layer"
 msgstr ""
 
 # 1693eedbc44c4fc6b9081a9dd92ad164
-#: ../source/vector.rst:15
+#: ../../source/vector.rst:15
 msgid ""
 "Below is an example how to go through the features of the layer. To read "
 "features from layer, initialize the retieval with :func:`select` and then "
@@ -54,52 +55,52 @@ msgid ""
 msgstr ""
 
 # fbd03322e65d4122b6b97b0ddfc1d0b8
-#: ../source/vector.rst:57
+#: ../../source/vector.rst:57
 msgid ""
 ":func:`select` gives you flexibility in what data will be fetched. It can "
 "get 4 arguments, all of them are optional:"
 msgstr ""
 
 # 8519f881a2424bc791024e3512cbd2d7
-#: ../source/vector.rst:59
+#: ../../source/vector.rst:59
 msgid "fetchAttributes"
 msgstr ""
 
 # b2a7b6627a4c40a28ab69f4582f59bc5
-#: ../source/vector.rst:60
+#: ../../source/vector.rst:60
 msgid "List of attributes which should be fetched. Default: empty list"
 msgstr ""
 
 # 689f03927b3c4f1ea8850b39e4c962fc
-#: ../source/vector.rst:61
+#: ../../source/vector.rst:61
 msgid "rect"
 msgstr ""
 
 # c639d17bc7dc4a52b8f80966e8f701d0
-#: ../source/vector.rst:62
+#: ../../source/vector.rst:62
 msgid ""
 "Spatial filter. If empty rect is given (:obj:`QgsRectangle()`), all features "
 "are fetched. Default: empty rect"
 msgstr ""
 
 # dadca257309242d5b2d32a92ce4a1a98
-#: ../source/vector.rst:63
+#: ../../source/vector.rst:63
 msgid "fetchGeometry"
 msgstr ""
 
 # e913ac13b3434520a99933e18650fb8d
-#: ../source/vector.rst:64
+#: ../../source/vector.rst:64
 msgid ""
 "Whether geometry of the feature should be fetched. Default: :const:`True`"
 msgstr ""
 
 # 6577a5cd26564e529e9c4a77b94ee1c6
-#: ../source/vector.rst:67
+#: ../../source/vector.rst:67
 msgid "useIntersect"
 msgstr ""
 
 # 8d7d1b1e970e44a2b7af0ab009cb6184
-#: ../source/vector.rst:66
+#: ../../source/vector.rst:66
 msgid ""
 "When using spatial filter, this argument says whether accurate test for "
 "intersection should be done or whether test on bounding box suffices. This "
@@ -108,34 +109,34 @@ msgid ""
 msgstr ""
 
 # 897e5ce9ebde4f07b5fae9841c90a163
-#: ../source/vector.rst:69
+#: ../../source/vector.rst:69
 msgid "Some examples::"
 msgstr ""
 
 # d1cd5a0c93b3494ab98ad4570632024f
-#: ../source/vector.rst:81
+#: ../../source/vector.rst:81
 msgid ""
 "To obtain field index from its name, use provider's :func:`fieldNameIndex` "
 "function::"
 msgstr ""
 
 # 22745590a48d490491a692529510f20f
-#: ../source/vector.rst:90
+#: ../../source/vector.rst:90
 msgid "Using Spatial Index"
 msgstr ""
 
 # c2eed645e7224c6c993c13d236679739
-#: ../source/vector.rst:93
+#: ../../source/vector.rst:93
 msgid "Intro to spatial indexing"
 msgstr ""
 
 # a89ce60be7ad4c4a867b79b2df759ae6
-#: ../source/vector.rst:95
+#: ../../source/vector.rst:95
 msgid "create spatial index - the following code creates an empty index::"
 msgstr ""
 
 # 8e18283ce931495eb6fb82b71a4947e0
-#: ../source/vector.rst:99
+#: ../../source/vector.rst:99
 msgid ""
 "add features to index - index takes :class:`QgsFeature` object and adds it "
 "to the internal data structure. You can create the object manually or use "
@@ -143,18 +144,18 @@ msgid ""
 msgstr ""
 
 # 3d4f86abb4024c89aba088d5ac3c7225
-#: ../source/vector.rst:104
+#: ../../source/vector.rst:104
 msgid ""
 "once spatial index is filled with some values, you can do some queries::"
 msgstr ""
 
 # 81624ad3c2194fc0bd955fe9e68c788e
-#: ../source/vector.rst:117
+#: ../../source/vector.rst:117
 msgid "Writing Vector Layers"
 msgstr ""
 
 # 727c7b38cfed4d73b52d23069639b068
-#: ../source/vector.rst:119
+#: ../../source/vector.rst:119
 msgid ""
 "You can write vector layer files using :class:`QgsVectorFileWriter` class. "
 "It supports any other kind of vector file that OGR supports (shapefiles, "
@@ -162,17 +163,17 @@ msgid ""
 msgstr ""
 
 # 98804b6f09584f78ab997407055e07ab
-#: ../source/vector.rst:121
+#: ../../source/vector.rst:121
 msgid "There are two possibilities how to export a vector layer:"
 msgstr ""
 
 # b730d3fb15ea4d4c93b4218da1d9569d
-#: ../source/vector.rst:123
+#: ../../source/vector.rst:123
 msgid "from an instance of :class:`QgsVectorLayer`::"
 msgstr ""
 
 # e1ca4a1f1fac4e75a8d38a28be0279de
-#: ../source/vector.rst:134
+#: ../../source/vector.rst:134
 msgid ""
 "Third parameter specifies output text encoding. Only some drivers need this "
 "for correct operation - shapefiles are one of those - however in case you "
@@ -184,7 +185,7 @@ msgid ""
 msgstr ""
 
 # ae1de43a5dc2413797e053e48f4769b0
-#: ../source/vector.rst:138
+#: ../../source/vector.rst:138
 msgid ""
 "For valid driver names please consult the `supported formats by OGR`_ - you "
 "should pass the value in \"Code\" column as the driver name. Optionally you "
@@ -194,17 +195,17 @@ msgid ""
 msgstr ""
 
 # f4aebc6f6e4149b394fbc3aed0502ff2
-#: ../source/vector.rst:145
+#: ../../source/vector.rst:145
 msgid "directly from features::"
 msgstr ""
 
 # 14eca9e5da8241b29dccebce8dd2b609
-#: ../source/vector.rst:175
+#: ../../source/vector.rst:175
 msgid "Memory Provider"
 msgstr ""
 
 # 269314e26dd546418aaafbcd82f5379d
-#: ../source/vector.rst:177
+#: ../../source/vector.rst:177
 msgid ""
 "Memory provider is intended to be used mainly by plugin or 3rd party app "
 "developers. It does not store data on disk, allowing developers to use it as "
@@ -212,12 +213,12 @@ msgid ""
 msgstr ""
 
 # 70c43581be7d466bb727ddc9de179f82
-#: ../source/vector.rst:180
+#: ../../source/vector.rst:180
 msgid "The provider supports string, int and double fields."
 msgstr ""
 
 # e25e4baa8a87408481bdc4515f66d861
-#: ../source/vector.rst:182
+#: ../../source/vector.rst:182
 msgid ""
 "The memory provider also supports spatial indexing, which is enabled by "
 "calling the provider's :func:`createSpatialIndex` function. Once the spatial "
@@ -227,14 +228,14 @@ msgid ""
 msgstr ""
 
 # 050dda42e0694bb8b37c17a3ade12407
-#: ../source/vector.rst:186
+#: ../../source/vector.rst:186
 msgid ""
 "A memory provider is created by passing ``\"memory\"`` as the provider "
 "string to the :class:`QgsVectorLayer` constructor."
 msgstr ""
 
 # 1cedbeb751bb48878bd4415fa0b4f2bb
-#: ../source/vector.rst:188
+#: ../../source/vector.rst:188
 msgid ""
 "The constructor also takes a URI defining the geometry type of the layer, "
 "one of: ``\"Point\"``, ``\"LineString\"``, ``\"Polygon\"``, ``\"MultiPoint"
@@ -242,7 +243,7 @@ msgid ""
 msgstr ""
 
 # 9ef4dc042d6546f9ae251a5a73ba9289
-#: ../source/vector.rst:191
+#: ../../source/vector.rst:191
 msgid ""
 "From QGIS version 1.7 the URI can also specify the coordinate reference "
 "system, fields, and indexing of the memory provider in the URI. The syntax "
@@ -250,34 +251,34 @@ msgid ""
 msgstr ""
 
 # c553fda258ba43888228aac315f73833
-#: ../source/vector.rst:197
+#: ../../source/vector.rst:197
 msgid "crs=definition"
 msgstr ""
 
 # 372c949e7b2e4d53a7b29fa39494b636
-#: ../source/vector.rst:196
+#: ../../source/vector.rst:196
 msgid ""
 "Specifies the coordinate reference system, where definition may be any of "
 "the forms accepted by :func:`QgsCoordinateReferenceSystem.createFromString`"
 msgstr ""
 
 # 1877b81bce024a288e967e8872bcfb5d
-#: ../source/vector.rst:200
+#: ../../source/vector.rst:200
 msgid "index=yes"
 msgstr ""
 
 # 252b27e3efee49ff8c73560ae87c129b
-#: ../source/vector.rst:200
+#: ../../source/vector.rst:200
 msgid "Specifies that the provider will use a spatial index"
 msgstr ""
 
 # 73cc6d3837974fc6af3e05b34e155b49
-#: ../source/vector.rst:205
+#: ../../source/vector.rst:205
 msgid "field=name:type(length,precision)"
 msgstr ""
 
 # 2904b1f7d4be4dc0a2d36c87d03ff583
-#: ../source/vector.rst:203
+#: ../../source/vector.rst:203
 msgid ""
 "Specifies an attribute of the layer.  The attribute has a name, and "
 "optionally a type (integer, double, or string), length, and precision. There "
@@ -285,29 +286,29 @@ msgid ""
 msgstr ""
 
 # ff5e1eb8097a444ab3421f58865bc8b4
-#: ../source/vector.rst:207
+#: ../../source/vector.rst:207
 msgid "The following example of a URI incorporates all these options::"
 msgstr ""
 
 # ddfccfda09054e0aa76c3a1a6efb7945
-#: ../source/vector.rst:211
+#: ../../source/vector.rst:211
 msgid ""
 "The following example code illustrates creating and populating a memory "
 "provider::"
 msgstr ""
 
 # 9b3c7cad7a79424394405c9bf88565a9
-#: ../source/vector.rst:234
+#: ../../source/vector.rst:234
 msgid "Finally, let's check whether everything went well::"
 msgstr ""
 
 # ec4e8c9ab0194ae698677d51d62bb905
-#: ../source/vector.rst:250
+#: ../../source/vector.rst:250
 msgid "Appearance (Symbology) of Vector Layers"
 msgstr ""
 
 # 1d52cb99192540abbebb612fabd234b4
-#: ../source/vector.rst:252
+#: ../../source/vector.rst:252
 msgid ""
 "When a vector layer is being rendered, the appearance of the data is given "
 "by **renderer** and **symbols** associated with the layer. Symbols are "
@@ -316,7 +317,7 @@ msgid ""
 msgstr ""
 
 # 983416170c1044ab9fb80838f058b5f0
-#: ../source/vector.rst:255
+#: ../../source/vector.rst:255
 msgid ""
 "In QGIS v1,4 a new vector rendering stack has been introduced in order to "
 "overcome the limitations of the original implementation. We refer to it as "
@@ -331,12 +332,12 @@ msgid ""
 msgstr ""
 
 # 4f9409372bf54c0a9e2ad3dd22875368
-#: ../source/vector.rst:262
+#: ../../source/vector.rst:262
 msgid "How to find out which implementation is currently in use::"
 msgstr ""
 
 # caa827e8e8044b0faace38286ed48e59
-#: ../source/vector.rst:272
+#: ../../source/vector.rst:272
 msgid ""
 "Note: if you plan to support also earlier versions (i.e. QGIS < 1.4), you "
 "should first check whether the :func:`isUsingRendererV2` method exists -- if "
@@ -344,91 +345,91 @@ msgid ""
 msgstr ""
 
 # e4c7a934a4d544a49afc546bbce907b1
-#: ../source/vector.rst:278
+#: ../../source/vector.rst:278
 msgid ""
 "We are going to focus primarily on new symbology because it has better "
 "capabilities are more options for customization."
 msgstr ""
 
 # b90153103ef344788e1d3fdfeb7dfa84
-#: ../source/vector.rst:282
+#: ../../source/vector.rst:282
 msgid "New Symbology"
 msgstr ""
 
 # 7093af22438342beab17e7ae1ca66355
-#: ../source/vector.rst:284
+#: ../../source/vector.rst:284
 msgid ""
 "Now that we have a reference to a renderer from the previous section, let us "
 "explore it a bit::"
 msgstr ""
 
 # de9433e6ee954fe3a6a9ae1523f9897b
-#: ../source/vector.rst:288
+#: ../../source/vector.rst:288
 msgid "There are several known renderer types available in QGIS core library:"
 msgstr ""
 
 # 82167398610f4b4694e37a9558d1fb68
-#: ../source/vector.rst:291
+#: ../../source/vector.rst:291
 msgid "Type"
 msgstr ""
 
 # 2795d14f15f1408aba9ed87a401f748f
-#: ../source/vector.rst:291
+#: ../../source/vector.rst:291
 msgid "Class"
 msgstr ""
 
 # 8f217bff8e5c4b68932255f9e0c19294
-#: ../source/vector.rst:291
+#: ../../source/vector.rst:291
 msgid "Description"
 msgstr ""
 
 # b9ff7699917642ab84200a869d1052b5
-#: ../source/vector.rst:293
+#: ../../source/vector.rst:293
 msgid "singleSymbol"
 msgstr ""
 
 # ddb58276b7eb42218cbe0f6bb0ee9bd0
-#: ../source/vector.rst:293
+#: ../../source/vector.rst:293
 msgid ":class:`QgsSingleSymbolRendererV2`"
 msgstr ""
 
 # 660fb3b5537b4f42906cdf57d490e099
-#: ../source/vector.rst:293
+#: ../../source/vector.rst:293
 msgid "Renders all features with the same symbol"
 msgstr ""
 
 # 33664e1496a6439bb7bdd0bee80fb324
-#: ../source/vector.rst:294
+#: ../../source/vector.rst:294
 msgid "categorizedSymbol"
 msgstr ""
 
 # 72f6b1ec2ece4b54a2fbb4ce66625847
-#: ../source/vector.rst:294
+#: ../../source/vector.rst:294
 msgid ":class:`QgsCategorizedSymbolRendererV2`"
 msgstr ""
 
 # 9a0a62ac7aed47c9a485109096003aa4
-#: ../source/vector.rst:294
+#: ../../source/vector.rst:294
 msgid "Renders features using a different symbol for each category"
 msgstr ""
 
 # 3c58ff8c96df4c5091c40b3f78935b57
-#: ../source/vector.rst:295
+#: ../../source/vector.rst:295
 msgid "graduatedSymbol"
 msgstr ""
 
 # 2307eca7a76f418f8d45d3a363dbe851
-#: ../source/vector.rst:295
+#: ../../source/vector.rst:295
 msgid ":class:`QgsGraduatedSymbolRendererV2`"
 msgstr ""
 
 # 37ce37e2079c40a383a80879aac078e2
-#: ../source/vector.rst:295
+#: ../../source/vector.rst:295
 msgid "Renders features using a different symbol for each range of values"
 msgstr ""
 
 # 87d0df181cbf4514bf7056e7b86455b2
-#: ../source/vector.rst:298
+#: ../../source/vector.rst:298
 msgid ""
 "There might be also some custom renderer types, so never make an assumption "
 "there are just these types. You can query :class:`QgsRendererV2Registry` "
@@ -436,19 +437,19 @@ msgid ""
 msgstr ""
 
 # ca4cd3590d6548da9c2eccef30ce3151
-#: ../source/vector.rst:301
+#: ../../source/vector.rst:301
 msgid ""
 "It is possible to obtain a dump of a renderer contents in text form - can be "
 "useful for debugging::"
 msgstr ""
 
 # 6d0111cb145542d3b97f71ac2ab3174d
-#: ../source/vector.rst:307
+#: ../../source/vector.rst:307
 msgid "Single Symbol Renderer"
 msgstr ""
 
 # 2b2b4eca66d143058e294a03ca1096ee
-#: ../source/vector.rst:309
+#: ../../source/vector.rst:309
 msgid ""
 "You can get the symbol used for rendering by calling :func:`symbol` method "
 "and change it with :func:`setSymbol` method (note for C++ devs: the renderer "
@@ -456,24 +457,24 @@ msgid ""
 msgstr ""
 
 # 1b5b654c23fd4e97a1d36db5ce5409a7
-#: ../source/vector.rst:313
+#: ../../source/vector.rst:313
 msgid "Categorized Symbol Renderer"
 msgstr ""
 
 # 8e1e53948b624c388ec523451ccc9a61
-#: ../source/vector.rst:315
+#: ../../source/vector.rst:315
 msgid ""
 "You can query and set attribute name which is used for classification: use :"
 "func:`classAttribute` and :func:`setClassAttribute` methods."
 msgstr ""
 
 # c6cfe28c2fe74a1a8d350bb51c678521
-#: ../source/vector.rst:317
+#: ../../source/vector.rst:317
 msgid "To get a list of categories::"
 msgstr ""
 
 # 5135a0ce1b9f4ecaa900e8c9f11c4f04
-#: ../source/vector.rst:322
+#: ../../source/vector.rst:322
 msgid ""
 "Where :func:`value` is the value used for discrimination between "
 "categories, :func:`label` is a text used for category description and :func:"
@@ -481,7 +482,7 @@ msgid ""
 msgstr ""
 
 # d8fc3d2e7d7947a5bd71471e47b8c928
-#: ../source/vector.rst:325
+#: ../../source/vector.rst:325
 msgid ""
 "The renderer usually stores also original symbol and color ramp which were "
 "used for the classification: :func:`sourceColorRamp` and :func:"
@@ -489,12 +490,12 @@ msgid ""
 msgstr ""
 
 # 0b1095d532c44b1b8ca6113b29de4322
-#: ../source/vector.rst:329
+#: ../../source/vector.rst:329
 msgid "Graduated Symbol Renderer"
 msgstr ""
 
 # 8468b764d0b947bd8d2dc2d967c0f697
-#: ../source/vector.rst:331
+#: ../../source/vector.rst:331
 msgid ""
 "This renderer is very similar to the categorized symbol renderer described "
 "above, but instead of one attribute value per class it works with ranges of "
@@ -502,12 +503,12 @@ msgid ""
 msgstr ""
 
 # e0900d6d2cca424cab0fc6baf65f3ee5
-#: ../source/vector.rst:334
+#: ../../source/vector.rst:334
 msgid "To find out more about ranges used in the renderer::"
 msgstr ""
 
 # 4e94861bacd24c4a89876195dab5bf55
-#: ../source/vector.rst:339
+#: ../../source/vector.rst:339
 msgid ""
 "You can again use :func:`classAttribute` to find out classification "
 "attribute name, :func:`sourceSymbol` and :func:`sourceColorRamp` methods. "
@@ -516,34 +517,34 @@ msgid ""
 msgstr ""
 
 # 24f0d65c5f4e4b22bce10bbf74026d7e
-#: ../source/vector.rst:344
+#: ../../source/vector.rst:344
 msgid "Working with Symbols"
 msgstr ""
 
 # 82074c7124d44441ab4d94c00b9c80f7
-#: ../source/vector.rst:346
+#: ../../source/vector.rst:346
 msgid ""
 "For representation of symbols, there is :class:`QgsSymbolV2` base class with "
 "three derived classes:"
 msgstr ""
 
 # 455f923b53e94bb6a4eeb633f63c165b
-#: ../source/vector.rst:348
+#: ../../source/vector.rst:348
 msgid ":class:`QgsMarkerSymbolV2` - for point features"
 msgstr ""
 
 # b26c8059d4e94b259d0e9d112e3b6b3e
-#: ../source/vector.rst:349
+#: ../../source/vector.rst:349
 msgid ":class:`QgsLineSymbolV2` - for line features"
 msgstr ""
 
 # c1c2d4b2e8b84baf9b766414d4c942b6
-#: ../source/vector.rst:350
+#: ../../source/vector.rst:350
 msgid ":class:`QgsFillSymbolV2` - for polygon features"
 msgstr ""
 
 # de9db3fdb6ac41689c9a7ec1bfca2c0e
-#: ../source/vector.rst:352
+#: ../../source/vector.rst:352
 msgid ""
 "**Every symbol consists of one or more symbol layers** (classes derived "
 "from :class:`QgsSymbolLayerV2`). The symbol layers do the actual rendering, "
@@ -551,7 +552,7 @@ msgid ""
 msgstr ""
 
 # 460e407c4955423ca2d6383573cc5c15
-#: ../source/vector.rst:355
+#: ../../source/vector.rst:355
 msgid ""
 "Having an instance of a symbol (e.g. from a renderer), it is possible to "
 "explore it: :func:`type` method says whether it is a marker, line or fill "
@@ -560,7 +561,7 @@ msgid ""
 msgstr ""
 
 # 084c8631b1f5438bac9646ce8b4c34bc
-#: ../source/vector.rst:362
+#: ../../source/vector.rst:362
 msgid ""
 "To find out symbol's color use :func:`color` method and :func:`setColor` to "
 "change its color. With marker symbols additionally you can query for the "
@@ -569,17 +570,17 @@ msgid ""
 msgstr ""
 
 # 000ed9767c954b7faecb6a702a6146e1
-#: ../source/vector.rst:366
+#: ../../source/vector.rst:366
 msgid "Size and width are in millimeters by default, angles are in degrees."
 msgstr ""
 
 # e9b7cb9d00b44762bc855871377513aa
-#: ../source/vector.rst:369
+#: ../../source/vector.rst:369
 msgid "Working with Symbol Layers"
 msgstr ""
 
 # 03291c38cdfd4a3fb0dab1a9d43a02c0
-#: ../source/vector.rst:371
+#: ../../source/vector.rst:371
 msgid ""
 "As said before, symbol layers (subclasses of :class:`QgsSymbolLayerV2`) "
 "determine the appearance of the features. There are several basic symbol "
@@ -592,7 +593,7 @@ msgid ""
 msgstr ""
 
 # a5742e8e890c449a906d24c78cd8c341
-#: ../source/vector.rst:376
+#: ../../source/vector.rst:376
 msgid ""
 "To access symbol layer data, use its :func:`properties` method that returns "
 "a key-value dictionary of properties which determine the appearance. Each "
@@ -604,12 +605,12 @@ msgid ""
 msgstr ""
 
 # 1437ff6d44bf43dabdadafb5fe1ffafa
-#: ../source/vector.rst:383
+#: ../../source/vector.rst:383
 msgid "Creating Custom Symbol Layer Types"
 msgstr ""
 
 # a4a519d006194d38acd016d9b2bee376
-#: ../source/vector.rst:385
+#: ../../source/vector.rst:385
 msgid ""
 "Imagine you would like to customize the way how the data gets rendered. You "
 "can create your own symbol layer class that will draw the features exactly "
@@ -618,7 +619,7 @@ msgid ""
 msgstr ""
 
 # 79a5e22c65e047659dfd6ae4de62516d
-#: ../source/vector.rst:418
+#: ../../source/vector.rst:418
 msgid ""
 "The :func:`layerType` method determines the name of the symbol layer, it has "
 "to be unique among all symbol layers. Properties are used for persistence of "
@@ -631,7 +632,7 @@ msgid ""
 msgstr ""
 
 # 00d2ba87538d4c0787166ff8dd4da854
-#: ../source/vector.rst:423
+#: ../../source/vector.rst:423
 msgid ""
 "For polylines and polygons the only difference would be in the rendering "
 "method: you would use :func:`renderPolyline` which receives a list of lines, "
@@ -640,7 +641,7 @@ msgid ""
 msgstr ""
 
 # 08e016cf80464527814e4140212e932b
-#: ../source/vector.rst:426
+#: ../../source/vector.rst:426
 msgid ""
 "Usually it is convenient to add a GUI for setting attributes of the symbol "
 "layer type to allow users to customize the appearance: in case of our "
@@ -649,7 +650,7 @@ msgid ""
 msgstr ""
 
 # 17b0fc8f47cd4c6288c6f12f9b74c8bc
-#: ../source/vector.rst:457
+#: ../../source/vector.rst:457
 msgid ""
 "This widget can be embedded into the symbol properties dialog. When the "
 "symbol layer type is selected in symbol properties dialog, it creates an "
@@ -662,14 +663,14 @@ msgid ""
 msgstr ""
 
 # 09fa650312974734b572a19a3ea7870e
-#: ../source/vector.rst:462
+#: ../../source/vector.rst:462
 msgid ""
 "On every change of attributes, the widget should emit :func:`changed()` "
 "signal to let the properties dialog update the symbol preview."
 msgstr ""
 
 # a419bb410fe84deaba1fd892bd7073c3
-#: ../source/vector.rst:464
+#: ../../source/vector.rst:464
 msgid ""
 "Now we are missing only the final glue: to make QGIS aware of these new "
 "classes. This is done by adding the symbol layer to registry. It is possible "
@@ -679,12 +680,12 @@ msgid ""
 msgstr ""
 
 # c7a799de39b049a2b711f7bf01978e09
-#: ../source/vector.rst:468
+#: ../../source/vector.rst:468
 msgid "We will have to create metadata for the symbol layer::"
 msgstr ""
 
 # dbe114efc5644f078b27ace14580a6c2
-#: ../source/vector.rst:484
+#: ../../source/vector.rst:484
 msgid ""
 "You should pass layer type (the same as returned by the layer) and symbol "
 "type (marker/line/fill) to the constructor of parent class. :func:"
@@ -696,19 +697,19 @@ msgid ""
 msgstr ""
 
 # ee63238fb05b4195a0f4945dc5e6219b
-#: ../source/vector.rst:489
+#: ../../source/vector.rst:489
 msgid ""
 "The last step is to add this symbol layer to the registry --- and we are "
 "done."
 msgstr ""
 
 # 6f990603f1884ca9bf28fd46c3617e7e
-#: ../source/vector.rst:493
+#: ../../source/vector.rst:493
 msgid "Creating Custom Renderers"
 msgstr ""
 
 # 66e4c553eaf646149580655e0517db2f
-#: ../source/vector.rst:495
+#: ../../source/vector.rst:495
 msgid ""
 "It might be useful to create a new renderer implementation if you would like "
 "to customize the rules how to select symbols for rendering of features. Some "
@@ -718,14 +719,14 @@ msgid ""
 msgstr ""
 
 # d2f88f5837054fc592cda19e6c56bd5c
-#: ../source/vector.rst:498
+#: ../../source/vector.rst:498
 msgid ""
 "The following code shows a simple custom renderer that creates two marker "
 "symbols and chooses randomly one of them for every feature::"
 msgstr ""
 
 # f0a94d0f7bea42a986488df63cc97068
-#: ../source/vector.rst:524
+#: ../../source/vector.rst:524
 msgid ""
 "The constructor of parent :class:`QgsFeatureRendererV2` class needs renderer "
 "name (has to be unique among renderers). :func:`symbolForFeature` method is "
@@ -737,7 +738,7 @@ msgid ""
 msgstr ""
 
 # 18b6036aed1e40d7a57bbf40749eac6c
-#: ../source/vector.rst:530
+#: ../../source/vector.rst:530
 msgid ""
 "Like with symbol layers, it is possible to attach a GUI for configuration of "
 "the renderer. It has to be derived from :class:`QgsRendererV2Widget`. The "
@@ -746,7 +747,7 @@ msgid ""
 msgstr ""
 
 # 4a8fdf67d5304f6fb6f84d4b8e8c0739
-#: ../source/vector.rst:557
+#: ../../source/vector.rst:557
 msgid ""
 "The constructor receives instances of the active layer (:class:"
 "`QgsVectorLayer`), the global style (:class:`QgsStyleV2`) and current "
@@ -759,7 +760,7 @@ msgid ""
 msgstr ""
 
 # 0b9cf9646c214e09ad0fabb642f64cc1
-#: ../source/vector.rst:562
+#: ../../source/vector.rst:562
 msgid ""
 "The last missing bit is the renderer metadata and registration in registry, "
 "otherwise loading of layers with the renderer will not work and user will "
@@ -768,7 +769,7 @@ msgid ""
 msgstr ""
 
 # 7f6e6f50417d46559048d698d61cfefb
-#: ../source/vector.rst:577
+#: ../../source/vector.rst:577
 msgid ""
 "Similarly as with symbol layers, abstract metadata constructor awaits "
 "renderer name, name visible for users and optionally name of renderer's "
@@ -780,7 +781,7 @@ msgid ""
 msgstr ""
 
 # 43e1d456369f444aa7fa5f8cf7c5c504
-#: ../source/vector.rst:581
+#: ../../source/vector.rst:581
 msgid ""
 "To associate an icon with the renderer you can assign it in :class:"
 "`QgsRendererV2AbstractMetadata` constructor as a third (optional) argument "
@@ -789,7 +790,7 @@ msgid ""
 msgstr ""
 
 # d6f77685b6864cd0a95a1a939f757082
-#: ../source/vector.rst:589
+#: ../../source/vector.rst:589
 msgid ""
 "The icon can be associated also at any later time using :func:`setIcon` "
 "method of the metadata class. The icon can be loaded from a file (as shown "
@@ -798,42 +799,42 @@ msgid ""
 msgstr ""
 
 # 4be897170ae84abb9aab7961376df35e
-#: ../source/vector.rst:593
+#: ../../source/vector.rst:593
 msgid "Further Topics"
 msgstr ""
 
 # 9b37d387b6e646009ea1eee8716c1afb
-#: ../source/vector.rst:596
+#: ../../source/vector.rst:596
 msgid "creating/modifying symbols"
 msgstr ""
 
 # 4860a799f8eb4fa4ab62dcd1cda88f4d
-#: ../source/vector.rst:597
+#: ../../source/vector.rst:597
 msgid "working with style (:class:`QgsStyleV2`)"
 msgstr ""
 
 # ba0060559c0749c6b9eb4058f83c092f
-#: ../source/vector.rst:598
+#: ../../source/vector.rst:598
 msgid "working with color ramps (:class:`QgsVectorColorRampV2`)"
 msgstr ""
 
 # f83f19f86c3343738a36fc1826bfdf24
-#: ../source/vector.rst:599
+#: ../../source/vector.rst:599
 msgid "rule-based renderer"
 msgstr ""
 
 # dc4a2fab40244eaba70741fe49db26c6
-#: ../source/vector.rst:600
+#: ../../source/vector.rst:600
 msgid "exploring symbol layer and renderer registries"
 msgstr ""
 
 # 0c4281d806884abf963cb465e6e5f846
-#: ../source/vector.rst:605
+#: ../../source/vector.rst:605
 msgid "Old Symbology"
 msgstr ""
 
 # 7b4ac42acf9a423193a56b9725564159
-#: ../source/vector.rst:607
+#: ../../source/vector.rst:607
 msgid ""
 "A symbol determines color, size and other properties of the feature. "
 "Renderer associated with the layer decides what symbol will be used for "
@@ -841,21 +842,21 @@ msgid ""
 msgstr ""
 
 # f14294f4c0984b0395421936c5b33ea5
-#: ../source/vector.rst:611
+#: ../../source/vector.rst:611
 msgid ""
 "single symbol renderer (:class:`QgsSingleSymbolRenderer`) --- all features "
 "are rendererd with the same symbol."
 msgstr ""
 
 # 1486acdf3a834d248e8bed0c64e1e2f4
-#: ../source/vector.rst:612
+#: ../../source/vector.rst:612
 msgid ""
 "unique value renderer (:class:`QgsUniqueValueRenderer`) --- symbol for each "
 "feature is choosen from attribute value."
 msgstr ""
 
 # 0144d26e8837465d938da12f88bb6316
-#: ../source/vector.rst:613
+#: ../../source/vector.rst:613
 msgid ""
 "graduated symbol renderer (:class:`QgsGraduatedSymbolRenderer`) --- a symbol "
 "is applied to a subgroup (class) of features, which is calculated on a "
@@ -863,17 +864,17 @@ msgid ""
 msgstr ""
 
 # eec4f05b03d24103b408333a9cadfd9a
-#: ../source/vector.rst:614
+#: ../../source/vector.rst:614
 msgid "continuous color renderer (:class:`QgsContinuousSymbolRenderer`)"
 msgstr ""
 
 # 81daae256563483a9bebae4b1c4c43a5
-#: ../source/vector.rst:616
+#: ../../source/vector.rst:616
 msgid "How to create a point symbol::"
 msgstr ""
 
 # 0a8466670c214aa9b889e3e53f29db65
-#: ../source/vector.rst:626
+#: ../../source/vector.rst:626
 msgid ""
 "The :func:`setNamedPointSymbol` method determines the shape of the symbol. "
 "There are two classes: hardcoded symbols (prefixed ``hard:``) and SVG "
@@ -884,41 +885,41 @@ msgid ""
 msgstr ""
 
 # 52f85205c1a2456cb3eeac670fd0b5f7
-#: ../source/vector.rst:631
+#: ../../source/vector.rst:631
 msgid "How to create an SVG symbol::"
 msgstr ""
 
 # dc1f5218d6224f6bac41e25bd4124703
-#: ../source/vector.rst:637
+#: ../../source/vector.rst:637
 msgid "SVG symbols do not support setting colors, fill and line styles."
 msgstr ""
 
 # 8791c46f76344db28ecd08530011a3ed
-#: ../source/vector.rst:639
+#: ../../source/vector.rst:639
 msgid "How to create a line symbol::"
 msgstr ""
 
 # 8c788849a10842b883e00b1df18f2dc0
-#: ../source/vector.rst:643
+#: ../../source/vector.rst:643
 msgid "How to create a fill symbol::"
 msgstr ""
 
 # 2fc08b6bbb644dfdb99ebaa06ff347a3
-#: ../source/vector.rst:647
+#: ../../source/vector.rst:647
 msgid "Create a single symbol renderer::"
 msgstr ""
 
 # 055b6a5d67dd4a23ac0328ad76fec529
-#: ../source/vector.rst:652
+#: ../../source/vector.rst:652
 msgid "Assign the renderer to a layer::"
 msgstr ""
 
 # 48c3882ba46d4553b6f0c84b296483e6
-#: ../source/vector.rst:656
+#: ../../source/vector.rst:656
 msgid "Create unique value renderer::"
 msgstr ""
 
 # 60c5f7d89ae64e0ca0286247be8ed73b
-#: ../source/vector.rst:660
+#: ../../source/vector.rst:660
 msgid "Create graduated symbol renderer::"
 msgstr ""

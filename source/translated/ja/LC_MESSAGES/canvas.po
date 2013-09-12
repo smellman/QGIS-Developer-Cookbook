@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # 057ef3a7c9ab44c89da13e4e485066f7
-#: ../source/canvas.rst:5
+#: ../../source/canvas.rst:5
 msgid "Using Map Canvas"
 msgstr ""
 
 # 54c5479f0e9c4832ae3b022455ab4f6b
-#: ../source/canvas.rst:7
+#: ../../source/canvas.rst:7
 msgid ""
 "The Map canvas widget is probably the most important widget within QGIS "
 "because it shows the map composed from overlaid map layers and allows "
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 
 # 61bd515f6c6e4b2eba0ae6295e2998ef
-#: ../source/canvas.rst:16
+#: ../../source/canvas.rst:16
 msgid ""
 "Map canvas is implemented as :class:`QgsMapCanvas` class in :mod:`qgis.gui` "
 "module.  The implementation is based on the Qt Graphics View framework. This "
@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 
 # 56446748d4f1497e9c17fea71d977a66
-#: ../source/canvas.rst:24
+#: ../../source/canvas.rst:24
 msgid ""
 "Whenever the map has been panned, zoomed in/out (or some other action "
 "triggers a refresh), the map is rendered again within the current extent. "
@@ -67,40 +67,40 @@ msgid ""
 msgstr ""
 
 # c7d73ea394654c9a8d657c5b4969f73b
-#: ../source/canvas.rst:39
+#: ../../source/canvas.rst:39
 msgid "To summarize, the map canvas architecture consists of three concepts:"
 msgstr ""
 
 # a5369716476c420a8929889c327ea6a2
-#: ../source/canvas.rst:41
+#: ../../source/canvas.rst:41
 msgid "map canvas --- for viewing of the map,"
 msgstr ""
 
 # 36b8922e45d34425b2abb1c396039189
-#: ../source/canvas.rst:42
+#: ../../source/canvas.rst:42
 msgid ""
 "map canvas items --- additional items that can be displayed in map canvas,"
 msgstr ""
 
 # ac011bacfa6a4f858c26a213046b9bc2
-#: ../source/canvas.rst:43
+#: ../../source/canvas.rst:43
 msgid "map tools --- for interaction with map canvas."
 msgstr ""
 
 # 1479e135a1a64089b8e08cb5ca4a0778
-#: ../source/canvas.rst:47
+#: ../../source/canvas.rst:47
 msgid "Embedding Map Canvas"
 msgstr ""
 
 # c5e809afab2042128302e4fb452bb8b8
-#: ../source/canvas.rst:49
+#: ../../source/canvas.rst:49
 msgid ""
 "Map canvas is a widget like any other Qt widget, so using it is as simple as "
 "creating and showing it::"
 msgstr ""
 
 # fe20a03a8e684a3fb8b18aa51609f14f
-#: ../source/canvas.rst:55
+#: ../../source/canvas.rst:55
 msgid ""
 "This produces a standalone window with map canvas. It can be also embedded "
 "into an existing widget or window. When using .ui files and Qt Designer, "
@@ -113,21 +113,21 @@ msgid ""
 msgstr ""
 
 # 35202511630f48c2812e85a0e918e190
-#: ../source/canvas.rst:63
+#: ../../source/canvas.rst:63
 msgid ""
 "By default, map canvas has black background and does not use anti-aliasing. "
 "To set white background and enable anti-aliasing for smooth rendering::"
 msgstr ""
 
 # 85d910b16f474269b69e64f5e490ba75
-#: ../source/canvas.rst:69
+#: ../../source/canvas.rst:69
 msgid ""
 "(In case you are wondering, ``Qt`` comes from ``PyQt4.QtCore`` module and "
 "``Qt.white`` is one of the predefined ``QColor`` instances.)"
 msgstr ""
 
 # 63ede87f898c41408b94f36d184a8622
-#: ../source/canvas.rst:72
+#: ../../source/canvas.rst:72
 msgid ""
 "Now it is time to add some map layers. We will first open a layer and add it "
 "to the map layer registry.  Then we will set the canvas extent and set the "
@@ -135,19 +135,19 @@ msgid ""
 msgstr ""
 
 # 162c70f9e3a146d4a47d53819faa7070
-#: ../source/canvas.rst:89
+#: ../../source/canvas.rst:89
 msgid ""
 "After executing these commands, the canvas should show the layer you have "
 "loaded."
 msgstr ""
 
 # f622799d3b0e438394a87fb32282d444
-#: ../source/canvas.rst:92
+#: ../../source/canvas.rst:92
 msgid "Using Map Tools with Canvas"
 msgstr ""
 
 # ed7a0d3d89684182a2e4b9023797f67f
-#: ../source/canvas.rst:94
+#: ../../source/canvas.rst:94
 msgid ""
 "The following example constructs a window that contains a map canvas and "
 "basic map tools for map panning and zooming.  Actions are created for "
@@ -161,7 +161,7 @@ msgid ""
 msgstr ""
 
 # 61a1e0a892a54f2fa073c84f27e5aa02
-#: ../source/canvas.rst:159
+#: ../../source/canvas.rst:159
 msgid ""
 "You can put the above code to a file, e.g. ``mywnd.py`` and try it out in "
 "Python console within QGIS.  This code will put the currently selected layer "
@@ -169,7 +169,7 @@ msgid ""
 msgstr ""
 
 # 719ac6d3dff44a35b935cf5d0d2fedda
-#: ../source/canvas.rst:167
+#: ../../source/canvas.rst:167
 msgid ""
 "Just make sure that the ``mywnd.py`` file is located within Python search "
 "path (``sys.path``). If it isn't, you can simply add it: ``sys.path."
@@ -178,12 +178,12 @@ msgid ""
 msgstr ""
 
 # 86bad1186840481db0789d3810ea4e28
-#: ../source/canvas.rst:173
+#: ../../source/canvas.rst:173
 msgid "Rubber Bands and Vertex Markers"
 msgstr ""
 
 # 64f95ed6b66341c685dc58e6fd4b5427
-#: ../source/canvas.rst:175
+#: ../../source/canvas.rst:175
 msgid ""
 "To show some additional data on top of the map in canvas, use map canvas "
 "items. It is possible to create custom canvas item classes (covered below), "
@@ -195,17 +195,17 @@ msgid ""
 msgstr ""
 
 # 1fd200fe2bd041ccbf246bf6dac0bd5d
-#: ../source/canvas.rst:183
+#: ../../source/canvas.rst:183
 msgid "To show a polyline::"
 msgstr ""
 
 # f0c03310233941e78bc0571a67551937
-#: ../source/canvas.rst:189
+#: ../../source/canvas.rst:189
 msgid "To show a polygon::"
 msgstr ""
 
 # fa7e704d28ec43118f10d93a38b4006c
-#: ../source/canvas.rst:195
+#: ../../source/canvas.rst:195
 msgid ""
 "Note that points for polygon is not a plain list: in fact, it is a list of "
 "rings containing linear rings of the polygon: first ring is the outer "
@@ -213,14 +213,14 @@ msgid ""
 msgstr ""
 
 # c6148a8acc1f4639baf626963cbb5900
-#: ../source/canvas.rst:199
+#: ../../source/canvas.rst:199
 msgid ""
 "Rubber bands allow some customization, namely to change their color and line "
 "width::"
 msgstr ""
 
 # 68031dcc8df84ed8b7709faa34b150e4
-#: ../source/canvas.rst:205
+#: ../../source/canvas.rst:205
 msgid ""
 "The canvas items are bound to the canvas scene. To temporarily hide them "
 "(and show again, use the :func:`hide` and :func:`show` combo. To completely "
@@ -228,7 +228,7 @@ msgid ""
 msgstr ""
 
 # cb6a74a635e246dd86be3589fe169ead
-#: ../source/canvas.rst:211
+#: ../../source/canvas.rst:211
 msgid ""
 "(in C++ it's possible to just delete the item, however in Python ``del r`` "
 "would just delete the reference and the object will still exist as it is "
@@ -236,7 +236,7 @@ msgid ""
 msgstr ""
 
 # d2229f6b64c54487a6f70c995a03b3e9
-#: ../source/canvas.rst:215
+#: ../../source/canvas.rst:215
 msgid ""
 "Rubber band can be also used for drawing points, however :class:"
 "`QgsVertexMarker` class is better suited for this (:class:`QgsRubberBand` "
@@ -245,35 +245,35 @@ msgid ""
 msgstr ""
 
 # 90f56140dce64904b30073baafaf8161
-#: ../source/canvas.rst:223
+#: ../../source/canvas.rst:223
 msgid ""
 "This will draw a red cross on position [0,0]. It is possible to customize "
 "the icon type, size, color and pen width::"
 msgstr ""
 
 # ba3c5ae9cd8a4e00a63b91a99e07dc7a
-#: ../source/canvas.rst:231
+#: ../../source/canvas.rst:231
 msgid ""
 "For temprary hiding of vertex markers and removing them from canvas, the "
 "same applies as for the rubber bands."
 msgstr ""
 
 # 8ac584aaa83044399f51972173d08846
-#: ../source/canvas.rst:235
+#: ../../source/canvas.rst:235
 msgid "Writing Custom Map Tools"
 msgstr ""
 
 # fb8f587254b54972bb3a5d25c481a0a6
-#: ../source/canvas.rst:237
+#: ../../source/canvas.rst:237
 msgid "**TODO:** how to create a map tool"
 msgstr ""
 
 # 460434cad8b447ba827a3e6760161a93
-#: ../source/canvas.rst:240
+#: ../../source/canvas.rst:240
 msgid "Writing Custom Map Canvas Items"
 msgstr ""
 
 # db02e19cd54044ed99d35e1283120f2a
-#: ../source/canvas.rst:242
+#: ../../source/canvas.rst:242
 msgid "**TODO:** how to create a map canvas item"
 msgstr ""

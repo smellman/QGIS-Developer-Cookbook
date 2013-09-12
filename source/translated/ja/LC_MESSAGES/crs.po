@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 13:07\n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # 958aeaa5333749bc96559195a45c0f2a
-#: ../source/crs.rst:5
+#: ../../source/crs.rst:5
 msgid "Projections Support"
 msgstr ""
 
 # 3f5543755198414294a51694b5315d52
-#: ../source/crs.rst:8
+#: ../../source/crs.rst:8
 msgid "Coordinate reference systems"
 msgstr ""
 
 # 825a06f1568a4e22896b4968578b7dd2
-#: ../source/crs.rst:10
+#: ../../source/crs.rst:10
 msgid ""
 "Coordinate reference systems (CRS) are encapsulated by :class:"
 "`QgsCoordinateReferenceSystem` class. Instances of this class can be created "
@@ -36,44 +36,44 @@ msgid ""
 msgstr ""
 
 # 4df8879923a04473a5f0313bb9ee76ec
-#: ../source/crs.rst:13
+#: ../../source/crs.rst:13
 msgid "specify CRS by its ID::"
 msgstr ""
 
 # ea357cb469fc4c81ba20cb843558f223
-#: ../source/crs.rst:18
+#: ../../source/crs.rst:18
 msgid "QGIS uses three different IDs for every reference system:"
 msgstr ""
 
 # b0d94806ba2e46ef8593a48dddb76fa6
-#: ../source/crs.rst:20
+#: ../../source/crs.rst:20
 msgid ":const:`PostgisCrsId` - IDs used within PostGIS databases."
 msgstr ""
 
 # dc8d5f5cb7fa483599e46130d530c897
-#: ../source/crs.rst:21
+#: ../../source/crs.rst:21
 msgid ":const:`InternalCrsId` - IDs internally used in QGIS database."
 msgstr ""
 
 # c881ceacc3254b7895553d9b3f7f9ebd
-#: ../source/crs.rst:22
+#: ../../source/crs.rst:22
 msgid ":const:`EpsgCrsId` - IDs assigned by the EPSG organization"
 msgstr ""
 
 # 0d14610cbc5444adb250ba0d1de13aa2
-#: ../source/crs.rst:24
+#: ../../source/crs.rst:24
 msgid ""
 "If not specified otherwise in second parameter, PostGIS SRID is used by "
 "default."
 msgstr ""
 
 # 6a09993eb698453fac01b4843b6cff7a
-#: ../source/crs.rst:26
+#: ../../source/crs.rst:26
 msgid "specify CRS by its well-known text (WKT)::"
 msgstr ""
 
 # 7b2eab6b2d65427ca15288c3d1b432b7
-#: ../source/crs.rst:33
+#: ../../source/crs.rst:33
 msgid ""
 "create invalid CRS and then use one of the :func:`create*` functions to "
 "initialize it. In following example we use Proj4 string to initialize the "
@@ -81,14 +81,14 @@ msgid ""
 msgstr ""
 
 # 46ff4daa4a4d4c14a606636695b29239
-#: ../source/crs.rst:38
+#: ../../source/crs.rst:38
 msgid ""
 "It's wise to check whether creation (i.e. lookup in the database) of the CRS "
 "has been successful: :func:`isValid` must return :const:`True`."
 msgstr ""
 
 # 5bc32c260025471986a3f7d0bb8f37c0
-#: ../source/crs.rst:40
+#: ../../source/crs.rst:40
 msgid ""
 "Note that for initialization of spatial reference systems QGIS needs to "
 "lookup appropriate values in its internal database :file:`srs.db`. Thus in "
@@ -99,17 +99,17 @@ msgid ""
 msgstr ""
 
 # ec444194578e42fd9a265ea1721e6c1d
-#: ../source/crs.rst:44
+#: ../../source/crs.rst:44
 msgid "Accessing spatial reference system information::"
 msgstr ""
 
 # bbec1fe54d084d62a9c5bc70b83d0555
-#: ../source/crs.rst:60
+#: ../../source/crs.rst:60
 msgid "Projections"
 msgstr ""
 
 # 2b5bb3da8b8340e492c55b064de2daac
-#: ../source/crs.rst:62
+#: ../../source/crs.rst:62
 msgid ""
 "You can do transformation between different spatial reference systems by "
 "using :class:`QgsCoordinateTransform` class. The easiest way to use it is to "
