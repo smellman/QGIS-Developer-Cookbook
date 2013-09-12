@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/composer.rst:5
+# 5527757fbbca4d9abda8eb623e68f350
+msgid "Map Rendering and Printing"
+msgstr ""
+
+#: ../../source/composer.rst:7
+# c3194737f0784725abd6c068fcc35eec
+msgid "There are generally two approaches when input data should be rendered as a map: either do it quick way using :class:`QgsMapRenderer` or produce more fine-tuned output by composing the map with :class:`QgsComposition` class and friends."
+msgstr ""
+
+#: ../../source/composer.rst:12
+# 5a7a85fcfb0542e8aaac569324461bac
+msgid "Simple Rendering"
+msgstr ""
+
+#: ../../source/composer.rst:14
+# db96c680c8cd454b89db9f8f6fbc051a
+msgid "Render some layers using :class:`QgsMapRenderer` - create destination paint device (``QImage``, ``QPainter`` etc.), set up layer set, extent, output size and do the rendering::"
+msgstr ""
+
+#: ../../source/composer.rst:52
+# 432734a45d414b758a87e86a0892a3b8
+msgid "Output using Map Composer"
+msgstr ""
+
+#: ../../source/composer.rst:54
+# a45354a3f91d4474bd575c718aff0a82
+msgid "Map composer is a very handy tool if you would like to do a more sophisticated output than the simple rendering shown above. Using the composer it is possible to create complex map layouts consisting of map views, labels, legend, tables and other elements that are usually present on paper maps. The layouts can be then exported to PDF, raster images or directly printed on a printer."
+msgstr ""
+
+#: ../../source/composer.rst:59
+# f081ed265603483e862caa238925c523
+msgid "The composer consists of a bunch of classes. They all belong to the core library. QGIS application has a convenient GUI for placement of the elements, though it is not available in the gui library. If you are not familiar with `Qt Graphics View framework <http://doc.qt.nokia.com/stable/graphicsview.html>`_, then you are encouraged to check the documentation now, because the composer is based on it."
+msgstr ""
+
+#: ../../source/composer.rst:64
+# 69ae54ebecf3470585f561b8fa06f46e
+msgid "The central class of the composer is :class:`QgsComposition` which is derived from :class:`QGraphicsScene`. Let us create one::"
+msgstr ""
+
+#: ../../source/composer.rst:71
+# 842da0a741584e1e961ef4c7093612e0
+msgid "Note that the composition takes an instance of :class:`QgsMapRenderer`. In the code we expect we are running within QGIS application and thus use the map renderer from map canvas. The composition uses various parameters from the map renderer, most importantly the default set of map layers and the current extent. When using composer in a standalone application, you can create your own map renderer instance the same way as shown in the section above and pass it to the composition."
+msgstr ""
+
+#: ../../source/composer.rst:76
+# b8e6352ff19a46c5ae9d4bdaa5ec9ba3
+msgid "It is possible to add various elements (map, label, ...) to the composition - these elements have to be descendants of :class:`QgsComposerItem` class. Currently supported items are:"
+msgstr ""
+
+#: ../../source/composer.rst:79
+# cd3dbdad688144ed9624cfa2a56896f9
+msgid "map - this item tells the libraries where to put the map itself. Here we create a map and stretch it over the whole paper size::"
+msgstr ""
+
+#: ../../source/composer.rst:86
+# f0a323a9629f4ab08eb307e952ce61bb
+msgid "label - allows displaying labels. It is possible to modify its font, color, alignment and margin. ::"
+msgstr ""
+
+#: ../../source/composer.rst:94
+# 2eda808811214e64b5a4cec3995ba61e
+msgid "legend ::"
+msgstr ""
+
+#: ../../source/composer.rst:101
+# 4c8857d06940456888935b00c2e49710
+msgid "scale bar ::"
+msgstr ""
+
+#: ../../source/composer.rst:110
+# 871b8aab12834b849ff75c7b1c9725f9
+msgid "arrow"
+msgstr ""
+
+#: ../../source/composer.rst:111
+# d685ad6ce90e401ca20a60f18cce4c50
+msgid "picture"
+msgstr ""
+
+#: ../../source/composer.rst:112
+# 43f53d8b04e841dcac14db6ddf7ed6c7
+msgid "shape"
+msgstr ""
+
+#: ../../source/composer.rst:113
+# 4ead90eacf7f419b97b05d526d76b3c2
+msgid "table"
+msgstr ""
+
+#: ../../source/composer.rst:115
+# e5b2123ba7544e2182de8bc5c710b9f6
+msgid "By default the newly created composer items have zero position (top left corner of the page) and zero size. The position and size are always measured in millimeters::"
+msgstr ""
+
+#: ../../source/composer.rst:123
+# 3faea4a07557478d9ac217cd25cd3e85
+msgid "A frame is drawn around each item by default. How to remove the frame::"
+msgstr ""
+
+#: ../../source/composer.rst:128
+# f62a9dbfdc7f474db5e1a23418c8e29f
+msgid "Besides creating the composer items by hand, QGIS has support for composer templates which are essentially compositions with all their items saved to a .qpt file (with XML syntax). Unfortunately this functionality is not yet available in the API."
+msgstr ""
+
+#: ../../source/composer.rst:131
+# 9b19503e82294da594b05b5e08a54690
+msgid "Once the composition is ready (the composer items have been created and added to the composition), we can proceed to produce a raster and/or vector output."
+msgstr ""
+
+#: ../../source/composer.rst:134
+# fe12338a31de4dd8a453d7cdc381e773
+msgid "The default output settings for composition are page size A4 and resolution 300 DPI. You can change them if necessary. The paper size is specified in millimeters::"
+msgstr ""
+
+#: ../../source/composer.rst:142
+# 1e0e0dad35e64b0aaf2b87340c071246
+msgid "Output to a raster image"
+msgstr ""
+
+#: ../../source/composer.rst:144
+# 0898a8e5fc2c457cbafd751383688c87
+msgid "The following code fragment shows how to render a composition to a raster image::"
+msgstr ""
+
+#: ../../source/composer.rst:168
+# e14060714ca640759e36aee525e3245e
+msgid "Output to PDF"
+msgstr ""
+
+#: ../../source/composer.rst:170
+# b70153b9eeb3450bb97325f1e42fd979
+msgid "The following code fragment renders a composition to a PDF file::"
+msgstr ""
+

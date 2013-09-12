@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/raster.rst:5
+# f64a3cfa9b114be69a44b5dfffd6d8f2
+msgid "Using Raster Layers"
+msgstr ""
+
+#: ../../source/raster.rst:7
+# b0d06b0aee5b46bf8dccfde2aee78a3c
+msgid "This sections lists various operations you can do with raster layers."
+msgstr ""
+
+#: ../../source/raster.rst:10
+# b7419c3c8034478c9a710c76ae6631bd
+msgid "Layer Details"
+msgstr ""
+
+#: ../../source/raster.rst:12
+# 38797d07b1b0464e978149599aa9e27c
+msgid "A raster layer consists of one or more raster bands - it is referred to as either single band or multi band raster. One band represents a matrix of values. Usual color image (e.g. aerial photo) is a raster consisting of red, blue and green band. Single band layers typically represent either continuous variables (e.g. elevation) or discrete variables (e.g. land use). In some cases, a raster layer comes with a palette and raster values refer to colors stored in the palette."
+msgstr ""
+
+#: ../../source/raster.rst:32
+# 02d2898917c3418486eb2e62d40d4546
+msgid "Drawing Style"
+msgstr ""
+
+#: ../../source/raster.rst:34
+# 0784a96e28ad467e9a76798dca0f32ea
+msgid "When a raster layer is loaded, it gets a default drawing style based on its type. It can be altered either in raster layer properties or programmatically. The following drawing styles exist:"
+msgstr ""
+
+#: ../../source/raster.rst:38
+# d8311355c2c0469299ab67ca92899f05
+msgid "Index"
+msgstr ""
+
+#: ../../source/raster.rst:38
+# ff1457a34b0040a89e2f428cef6d709e
+msgid "Constant: QgsRasterLater.X"
+msgstr ""
+
+#: ../../source/raster.rst:38
+# dc74fb99f35741419d538b7153c1559b
+msgid "Comment"
+msgstr ""
+
+#: ../../source/raster.rst:40
+# 45a0bc4f1a8d4a3d922dc98451800519
+msgid "1"
+msgstr ""
+
+#: ../../source/raster.rst:40
+# 76a7fc3fe7ef4ce1bf9db4de6bf90d9c
+msgid "SingleBandGray"
+msgstr ""
+
+#: ../../source/raster.rst:40
+# 81dd1f70705c4d1487aa47ebaa1ce7a2
+msgid "Single band image drawn as a range of gray colors"
+msgstr ""
+
+#: ../../source/raster.rst:41
+# ee76fce757554294b0400fcaa6f11718
+msgid "2"
+msgstr ""
+
+#: ../../source/raster.rst:41
+# b954e868c4ea4425872a229e511a341d
+msgid "SingleBandPseudoColor"
+msgstr ""
+
+#: ../../source/raster.rst:41
+# 169c318f6ae6459983bd1af0dbafda64
+msgid "Single band image drawn using a pseudocolor algorithm"
+msgstr ""
+
+#: ../../source/raster.rst:42
+# 6577d4d2cbaf444aa70e8c474fe3bd59
+msgid "3"
+msgstr ""
+
+#: ../../source/raster.rst:42
+# 36b4ff97ab3249e891217a32e9f4b3b4
+msgid "PalettedColor"
+msgstr ""
+
+#: ../../source/raster.rst:42
+# 19972376450d4e11bffdbfb89ade38d2
+msgid "\"Palette\" image drawn using color table"
+msgstr ""
+
+#: ../../source/raster.rst:43
+# 2d96079e02f441fb87a2030de0908a08
+msgid "4"
+msgstr ""
+
+#: ../../source/raster.rst:43
+# 22bc4d8e61ac4a589d84745c545fba4e
+msgid "PalettedSingleBandGray"
+msgstr ""
+
+#: ../../source/raster.rst:43
+# dde0169913e143c1b3d574501a617b20
+msgid "\"Palette\" layer drawn in gray scale"
+msgstr ""
+
+#: ../../source/raster.rst:44
+# 52addf28b94d4803b30327a92924b884
+msgid "5"
+msgstr ""
+
+#: ../../source/raster.rst:44
+# b171293b5ef64c6f82a8dcf23ff459d7
+msgid "PalettedSingleBandPseudoColor"
+msgstr ""
+
+#: ../../source/raster.rst:44
+# 46c5ef69104940e28361a4b4bdacd9d6
+msgid "\"Palette\" layerdrawn using a pseudocolor algorithm"
+msgstr ""
+
+#: ../../source/raster.rst:45
+# 30bb45881f0f47b48d76289f4235fffa
+msgid "7"
+msgstr ""
+
+#: ../../source/raster.rst:45
+# 12bb43abaeac4f9fa317b9ea39c1d00c
+msgid "MultiBandSingleBandGray"
+msgstr ""
+
+#: ../../source/raster.rst:45
+# 0a129decdf144872a1056f8430df6076
+msgid "Layer containing 2 or more bands, but a single band drawn as a range of gray colors"
+msgstr ""
+
+#: ../../source/raster.rst:46
+# 66ebcb0f32744a99a3bc0e1dc74f85d9
+msgid "8"
+msgstr ""
+
+#: ../../source/raster.rst:46
+# f299ec45a123445ab8ebd1bb0db4425d
+msgid "MultiBandSingleBandPseudoColor"
+msgstr ""
+
+#: ../../source/raster.rst:46
+# 432b45419d494609b7d68bf3c6c8532d
+msgid "Layer containing 2 or more bands, but a single band drawn using a pseudocolor algorithm"
+msgstr ""
+
+#: ../../source/raster.rst:47
+# a1167a4b146c4fff8c38cfecf6c88cfa
+msgid "9"
+msgstr ""
+
+#: ../../source/raster.rst:47
+# d5025f5c27fc40e8a1db735afcc77527
+msgid "MultiBandColor"
+msgstr ""
+
+#: ../../source/raster.rst:47
+# 27e557d618e548538702984636c57731
+msgid "Layer containing 2 or more bands, mapped to RGB color space."
+msgstr ""
+
+#: ../../source/raster.rst:50
+# a76ae9757f904bce91f43b76aaf33083
+msgid "To query the current drawing style:"
+msgstr ""
+
+#: ../../source/raster.rst:55
+# 8949864b73a547a2864ddf44df4ecd37
+msgid "Single band raster layers can be drawn either in gray colors (low values = black, high values = white) or with a pseudocolor algorithm that assigns colors for values from the single band. Single band rasters with a palette can be additionally drawn using their palette. Multiband layers are typically drawn by mapping the bands to RGB colors. Other possibility is to use just one band for gray or pseudocolor drawing."
+msgstr ""
+
+#: ../../source/raster.rst:60
+# 4030da5515494b4c907e29273cd2bc07
+msgid "The following sections explain how to query and modify the layer drawing style. After doing the changes, you might want to force update of map canvas, see :ref:`refresh-layer`."
+msgstr ""
+
+#: ../../source/raster.rst:63
+# 133bc665f2d647bb998470d31f60e681
+msgid "**TODO:** contrast enhancements, transparency (no data), user defined min/max, band statistics"
+msgstr ""
+
+#: ../../source/raster.rst:66
+# 45b2d0c552e44130bf5c399d4bc5cd99
+msgid "Single Band Rasters"
+msgstr ""
+
+#: ../../source/raster.rst:68
+# cae12c60eb804d43ab7257ed6f656426
+msgid "They are rendered in gray colors by default. To change the drawing style to pseudocolor:"
+msgstr ""
+
+#: ../../source/raster.rst:73
+# d6061d19aa1d43c79128c8e8b48812c6
+msgid "The ``PseudoColorShader`` is a basic shader that highlighs low values in blue and high values in red. Another, ``FreakOutShader`` uses more fancy colors and according to the documentation, it will frighten your granny and make your dogs howl."
+msgstr ""
+
+#: ../../source/raster.rst:76
+# 19759a8c254649578f3cf5d41dcbc1ee
+msgid "There is also ``ColorRampShader`` which maps the colors as specified by its color map. It has three modes of interpolation of values:"
+msgstr ""
+
+#: ../../source/raster.rst:78
+# f1171d192273419280c5d8c1d7422ed3
+msgid "linear (``INTERPOLATED``): resulting color is linearly interpolated from the color map entries above and below the actual pixel value"
+msgstr ""
+
+#: ../../source/raster.rst:79
+# 6f2ce4e39f9b4c9890a44d8efd226408
+msgid "discrete (``DISCRETE``): color is used from the color map entry with equal or higher value"
+msgstr ""
+
+#: ../../source/raster.rst:80
+# 11745d51987444f2bd457db6adb964df
+msgid "exact (``EXACT``): color is not interpolated, only the pixels with value equal to color map entries are drawn"
+msgstr ""
+
+#: ../../source/raster.rst:82
+# a2c0b057013b467296aaf32de80fc1d9
+msgid "To set an interpolated color ramp shader ranging from green to yellow color (for pixel values from 0 to 255)::"
+msgstr ""
+
+#: ../../source/raster.rst:90
+# 1aba762f6ff1498d955fcf69ac6da018
+msgid "To return back to default gray levels, use:"
+msgstr ""
+
+#: ../../source/raster.rst:95
+# 0e76a4d48e324609acc2abe73b6c4c4f
+msgid "Multi Band Rasters"
+msgstr ""
+
+#: ../../source/raster.rst:97
+# 943be78ebd894d8d958049d788d84d67
+msgid "By default, QGIS maps the first three bands to red, green and blue values to create a color image (this is the ``MultiBandColor`` drawing style. In some cases you might want to override these setting. The following code interchanges red band (1) and green band (2):"
+msgstr ""
+
+#: ../../source/raster.rst:103
+# 3f727889c03a4d169be5a0434461bff2
+msgid "In case only one band is necessary for visualization of the raster, single band drawing can be chosen - either gray levels or pseudocolor, see previous section::"
+msgstr ""
+
+#: ../../source/raster.rst:114
+# c052716480aa4b90a6e506859b74a638
+msgid "Refresing Layers"
+msgstr ""
+
+#: ../../source/raster.rst:116
+# 505fc03e0d6e4015b7813c168d9b82ad
+msgid "If you do change layer symbology and would like ensure that the changes are immediately visible to the user, call these methods::"
+msgstr ""
+
+#: ../../source/raster.rst:121
+# 3dcef78b8ff1484ab25acf98065e1798
+msgid "The first call will ensure that the cached image of rendered layer is erased in case render caching is turned on. This functionality is available from QGIS 1.4, in previous versions this function does not exist - to make sure that the code works with all versions of QGIS, we first check whether the method exists."
+msgstr ""
+
+#: ../../source/raster.rst:124
+# 2349b0e03aea4c9ca9a1ee64ad1176d9
+msgid "The second call emits signal that will force any map canvas containing the layer to issue a refresh."
+msgstr ""
+
+#: ../../source/raster.rst:126
+# f266db37ad8c4e8bbb3308a7a4ec6683
+msgid "In case you have changed layer symbology (see sections about raster and vector layers on how to do that), you might want to force QGIS to update the layer symbology in the layer list (legend) widget. This can be done as follows (``iface`` is an instance of QgisInterface)::"
+msgstr ""
+
+#: ../../source/raster.rst:132
+# 4516e0b38fb94b268d0e5cb97c42351f
+msgid "Query Values"
+msgstr ""
+
+#: ../../source/raster.rst:134
+# b37b65e3b46a488da9eb3df54309c6a9
+msgid "To do a query on value of bands of raster layer at some specified point::"
+msgstr ""
+
+#: ../../source/raster.rst:140
+# abfc549ec60f426792858d6b3b86310b
+msgid "The identify function returns True/False (to indicate succeess or failure) and a dictionary - keys are band names, values are the values at chosen point. Both key and value are QString instances so to see actual value you'll need to convert them to python strings (as shown in code snippet)."
+msgstr ""
+

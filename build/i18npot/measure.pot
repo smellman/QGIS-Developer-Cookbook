@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/measure.rst:5
+# e7ffa4724d134024bd8cc0a9c4b21706
+msgid "Measuring"
+msgstr ""
+
+#: ../../source/measure.rst:7
+# 57c7351f18754cac84281b8ec6e79906
+msgid "To compute distances or areas, use :class:`QgsDistanceArea` class. If projections are turned off, calculations will be planar, otherwise they'll be done on ellipsoid. When ellipsoid is not set explicitly it uses WGS84 parameters for calculations. ::"
+msgstr ""
+
+#: ../../source/measure.rst:16
+# 9309ece52a8c4f5ab0f49e709ca8f890
+msgid "**TODO:** area, planar vs. ellipsoid"
+msgstr ""
+

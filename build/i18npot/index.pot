@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 14:17\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/index.rst:7
+# ccd490f2a2f3407c9b987744826e92b7
+msgid "PyQGIS Developer Cookbook"
+msgstr ""
+
+#: ../../source/index.rst:9
+# 263806a43fe947eeb58b19078f47dd59
+msgid "Contents:"
+msgstr ""
+
+#: ../../source/index.rst:29
+# e16397285d2847899983c37673bed5f6
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../source/index.rst:31
+# a6061ceb02f54bf181f53293c5990635
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../source/index.rst:32
+# 6e1c7d260c8a48a8ba3a6d2b449cc732
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../source/index.rst:33
+# f0b3b3e3d6504d3994e848d88e6d3032
+msgid ":ref:`search`"
+msgstr ""
+
