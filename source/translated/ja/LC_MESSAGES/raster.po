@@ -8,296 +8,362 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 12:01\n"
+"POT-Creation-Date: 2013-09-12 13:07\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../source/raster.rst:5
 # b8eeda3d98cc4a12b3b09bf1d914e48b
+#: ../source/raster.rst:5
 msgid "Using Raster Layers"
 msgstr ""
 
-#: ../source/raster.rst:7
 # 0f185e198b674ffc9823d49606caddd3
+#: ../source/raster.rst:7
 msgid "This sections lists various operations you can do with raster layers."
 msgstr ""
 
-#: ../source/raster.rst:10
 # f049807830b94c90b529b314609edf94
+#: ../source/raster.rst:10
 msgid "Layer Details"
 msgstr ""
 
-#: ../source/raster.rst:12
 # e410ddb4f23e49a7a7e1e00a7d08c846
-msgid "A raster layer consists of one or more raster bands - it is referred to as either single band or multi band raster. One band represents a matrix of values. Usual color image (e.g. aerial photo) is a raster consisting of red, blue and green band. Single band layers typically represent either continuous variables (e.g. elevation) or discrete variables (e.g. land use). In some cases, a raster layer comes with a palette and raster values refer to colors stored in the palette."
+#: ../source/raster.rst:12
+msgid ""
+"A raster layer consists of one or more raster bands - it is referred to as "
+"either single band or multi band raster. One band represents a matrix of "
+"values. Usual color image (e.g. aerial photo) is a raster consisting of red, "
+"blue and green band. Single band layers typically represent either "
+"continuous variables (e.g. elevation) or discrete variables (e.g. land use). "
+"In some cases, a raster layer comes with a palette and raster values refer "
+"to colors stored in the palette."
 msgstr ""
 
-#: ../source/raster.rst:32
 # 2ffbe5da0ed54a5db3513a02f6545bc9
+#: ../source/raster.rst:32
 msgid "Drawing Style"
 msgstr ""
 
-#: ../source/raster.rst:34
 # 6c12a90a18d94e1ab41356ba2bdb78ae
-msgid "When a raster layer is loaded, it gets a default drawing style based on its type. It can be altered either in raster layer properties or programmatically. The following drawing styles exist:"
+#: ../source/raster.rst:34
+msgid ""
+"When a raster layer is loaded, it gets a default drawing style based on its "
+"type. It can be altered either in raster layer properties or "
+"programmatically. The following drawing styles exist:"
 msgstr ""
 
-#: ../source/raster.rst:38
 # c6825ecafe4440b69b64b344ba6a712b
+#: ../source/raster.rst:38
 msgid "Index"
 msgstr ""
 
-#: ../source/raster.rst:38
 # 7e892a7a6a634f4f90ec867e8f5e62ec
+#: ../source/raster.rst:38
 msgid "Constant: QgsRasterLater.X"
 msgstr ""
 
-#: ../source/raster.rst:38
 # 6c9aea9d50934adda24f141a467787c5
+#: ../source/raster.rst:38
 msgid "Comment"
 msgstr ""
 
-#: ../source/raster.rst:40
 # 6f5e11932309469da588f664192f149b
+#: ../source/raster.rst:40
 msgid "1"
 msgstr ""
 
-#: ../source/raster.rst:40
 # 97cd611cc093459a9e0edda9b9af480c
+#: ../source/raster.rst:40
 msgid "SingleBandGray"
 msgstr ""
 
-#: ../source/raster.rst:40
 # 85cb561a95704d148737c0e18c3ca489
+#: ../source/raster.rst:40
 msgid "Single band image drawn as a range of gray colors"
 msgstr ""
 
-#: ../source/raster.rst:41
 # d4a89853c3c5449daad0cdece53a065d
+#: ../source/raster.rst:41
 msgid "2"
 msgstr ""
 
-#: ../source/raster.rst:41
 # 9efe5e2745e1477296dc79da6363b4f6
+#: ../source/raster.rst:41
 msgid "SingleBandPseudoColor"
 msgstr ""
 
-#: ../source/raster.rst:41
 # 4e6c225a57404e14a02662689451691f
+#: ../source/raster.rst:41
 msgid "Single band image drawn using a pseudocolor algorithm"
 msgstr ""
 
-#: ../source/raster.rst:42
 # 9acdf02cad6e43dd885e8b75092af8cb
+#: ../source/raster.rst:42
 msgid "3"
 msgstr ""
 
-#: ../source/raster.rst:42
 # cd8dc9eb4e574dea912c207f9a2cbc4e
+#: ../source/raster.rst:42
 msgid "PalettedColor"
 msgstr ""
 
-#: ../source/raster.rst:42
 # 428e221e75994d619f4cac9c927e6c1f
+#: ../source/raster.rst:42
 msgid "\"Palette\" image drawn using color table"
 msgstr ""
 
-#: ../source/raster.rst:43
 # 635ea9abc77443478fdd7a41a1371352
+#: ../source/raster.rst:43
 msgid "4"
 msgstr ""
 
-#: ../source/raster.rst:43
 # 478a1f4c04c748f8a077a263ed52b3b7
+#: ../source/raster.rst:43
 msgid "PalettedSingleBandGray"
 msgstr ""
 
-#: ../source/raster.rst:43
 # 9b5f8b47ab5049bd97c9181526850d23
+#: ../source/raster.rst:43
 msgid "\"Palette\" layer drawn in gray scale"
 msgstr ""
 
-#: ../source/raster.rst:44
 # 5be2683cc2c44345afda5f0d69b8519d
+#: ../source/raster.rst:44
 msgid "5"
 msgstr ""
 
-#: ../source/raster.rst:44
 # 51a6e747b08d4ad4ba9f7944060d021c
+#: ../source/raster.rst:44
 msgid "PalettedSingleBandPseudoColor"
 msgstr ""
 
-#: ../source/raster.rst:44
 # 274f988507c643ebb320062aebb72b11
+#: ../source/raster.rst:44
 msgid "\"Palette\" layerdrawn using a pseudocolor algorithm"
 msgstr ""
 
-#: ../source/raster.rst:45
 # 962272cff62b4b94973a375148f9848c
+#: ../source/raster.rst:45
 msgid "7"
 msgstr ""
 
-#: ../source/raster.rst:45
 # 65475f842283453698e61c919c71ea38
+#: ../source/raster.rst:45
 msgid "MultiBandSingleBandGray"
 msgstr ""
 
-#: ../source/raster.rst:45
 # efbf47bd54c340f99dd3c785596de687
-msgid "Layer containing 2 or more bands, but a single band drawn as a range of gray colors"
+#: ../source/raster.rst:45
+msgid ""
+"Layer containing 2 or more bands, but a single band drawn as a range of gray "
+"colors"
 msgstr ""
 
-#: ../source/raster.rst:46
 # 7dbc8b9b34b2494580ad2eaee1b5c48b
+#: ../source/raster.rst:46
 msgid "8"
 msgstr ""
 
-#: ../source/raster.rst:46
 # 443876864eb440e99871e41f9e233770
+#: ../source/raster.rst:46
 msgid "MultiBandSingleBandPseudoColor"
 msgstr ""
 
-#: ../source/raster.rst:46
 # 47c2419562c84ad6b3cd8ecd8d83709a
-msgid "Layer containing 2 or more bands, but a single band drawn using a pseudocolor algorithm"
+#: ../source/raster.rst:46
+msgid ""
+"Layer containing 2 or more bands, but a single band drawn using a "
+"pseudocolor algorithm"
 msgstr ""
 
-#: ../source/raster.rst:47
 # 195c7a0395354f2cb1cf577862dc0f30
+#: ../source/raster.rst:47
 msgid "9"
 msgstr ""
 
-#: ../source/raster.rst:47
 # 6ada339838984f528710449f89c6e1d1
+#: ../source/raster.rst:47
 msgid "MultiBandColor"
 msgstr ""
 
-#: ../source/raster.rst:47
 # a4105cbcf71f43eaa6d5bb657eeaebde
+#: ../source/raster.rst:47
 msgid "Layer containing 2 or more bands, mapped to RGB color space."
 msgstr ""
 
-#: ../source/raster.rst:50
 # 227f99b20c6f4e2ea69a2811548a2707
+#: ../source/raster.rst:50
 msgid "To query the current drawing style:"
 msgstr ""
 
-#: ../source/raster.rst:55
 # 363210df43714a2f9c07eb88dd8e0fae
-msgid "Single band raster layers can be drawn either in gray colors (low values = black, high values = white) or with a pseudocolor algorithm that assigns colors for values from the single band. Single band rasters with a palette can be additionally drawn using their palette. Multiband layers are typically drawn by mapping the bands to RGB colors. Other possibility is to use just one band for gray or pseudocolor drawing."
+#: ../source/raster.rst:55
+msgid ""
+"Single band raster layers can be drawn either in gray colors (low values = "
+"black, high values = white) or with a pseudocolor algorithm that assigns "
+"colors for values from the single band. Single band rasters with a palette "
+"can be additionally drawn using their palette. Multiband layers are "
+"typically drawn by mapping the bands to RGB colors. Other possibility is to "
+"use just one band for gray or pseudocolor drawing."
 msgstr ""
 
-#: ../source/raster.rst:60
 # 4196245da83c4758b412367a29a48341
-msgid "The following sections explain how to query and modify the layer drawing style. After doing the changes, you might want to force update of map canvas, see :ref:`refresh-layer`."
+#: ../source/raster.rst:60
+msgid ""
+"The following sections explain how to query and modify the layer drawing "
+"style. After doing the changes, you might want to force update of map "
+"canvas, see :ref:`refresh-layer`."
 msgstr ""
 
-#: ../source/raster.rst:63
 # b66032a622f64633b12c02b691a6b023
-msgid "**TODO:** contrast enhancements, transparency (no data), user defined min/max, band statistics"
+#: ../source/raster.rst:63
+msgid ""
+"**TODO:** contrast enhancements, transparency (no data), user defined min/"
+"max, band statistics"
 msgstr ""
 
-#: ../source/raster.rst:66
 # b280bd88e4e84935b7e120b48db392b3
+#: ../source/raster.rst:66
 msgid "Single Band Rasters"
 msgstr ""
 
-#: ../source/raster.rst:68
 # e580cc02a4f242b28a06fc9ea7a0758d
-msgid "They are rendered in gray colors by default. To change the drawing style to pseudocolor:"
+#: ../source/raster.rst:68
+msgid ""
+"They are rendered in gray colors by default. To change the drawing style to "
+"pseudocolor:"
 msgstr ""
 
-#: ../source/raster.rst:73
 # 5829501e829647299ca21eccd7ba25d6
-msgid "The ``PseudoColorShader`` is a basic shader that highlighs low values in blue and high values in red. Another, ``FreakOutShader`` uses more fancy colors and according to the documentation, it will frighten your granny and make your dogs howl."
+#: ../source/raster.rst:73
+msgid ""
+"The ``PseudoColorShader`` is a basic shader that highlighs low values in "
+"blue and high values in red. Another, ``FreakOutShader`` uses more fancy "
+"colors and according to the documentation, it will frighten your granny and "
+"make your dogs howl."
 msgstr ""
 
-#: ../source/raster.rst:76
 # fa30d2b7be6f4eb58d5cd66314155b0b
-msgid "There is also ``ColorRampShader`` which maps the colors as specified by its color map. It has three modes of interpolation of values:"
+#: ../source/raster.rst:76
+msgid ""
+"There is also ``ColorRampShader`` which maps the colors as specified by its "
+"color map. It has three modes of interpolation of values:"
 msgstr ""
 
-#: ../source/raster.rst:78
 # 5f037016c1bc49378c3f8e5f5331821d
-msgid "linear (``INTERPOLATED``): resulting color is linearly interpolated from the color map entries above and below the actual pixel value"
+#: ../source/raster.rst:78
+msgid ""
+"linear (``INTERPOLATED``): resulting color is linearly interpolated from the "
+"color map entries above and below the actual pixel value"
 msgstr ""
 
-#: ../source/raster.rst:79
 # c7843175426f422ea99730bd9467609b
-msgid "discrete (``DISCRETE``): color is used from the color map entry with equal or higher value"
+#: ../source/raster.rst:79
+msgid ""
+"discrete (``DISCRETE``): color is used from the color map entry with equal "
+"or higher value"
 msgstr ""
 
-#: ../source/raster.rst:80
 # 7cf8dcd9e23c4f61984f2fe19bb4cd0b
-msgid "exact (``EXACT``): color is not interpolated, only the pixels with value equal to color map entries are drawn"
+#: ../source/raster.rst:80
+msgid ""
+"exact (``EXACT``): color is not interpolated, only the pixels with value "
+"equal to color map entries are drawn"
 msgstr ""
 
-#: ../source/raster.rst:82
 # dbcf10024e4a4ad5b50a2b6564ea575f
-msgid "To set an interpolated color ramp shader ranging from green to yellow color (for pixel values from 0 to 255)::"
+#: ../source/raster.rst:82
+msgid ""
+"To set an interpolated color ramp shader ranging from green to yellow color "
+"(for pixel values from 0 to 255)::"
 msgstr ""
 
-#: ../source/raster.rst:90
 # 9afc4444d4ef41178ae54fede731773f
+#: ../source/raster.rst:90
 msgid "To return back to default gray levels, use:"
 msgstr ""
 
-#: ../source/raster.rst:95
 # 0457a95e8bb248cbac4b8a2d15a5338c
+#: ../source/raster.rst:95
 msgid "Multi Band Rasters"
 msgstr ""
 
-#: ../source/raster.rst:97
 # cc64459c8742432d889c87f5f31371bf
-msgid "By default, QGIS maps the first three bands to red, green and blue values to create a color image (this is the ``MultiBandColor`` drawing style. In some cases you might want to override these setting. The following code interchanges red band (1) and green band (2):"
+#: ../source/raster.rst:97
+msgid ""
+"By default, QGIS maps the first three bands to red, green and blue values to "
+"create a color image (this is the ``MultiBandColor`` drawing style. In some "
+"cases you might want to override these setting. The following code "
+"interchanges red band (1) and green band (2):"
 msgstr ""
 
-#: ../source/raster.rst:103
 # 40d9f574ecb0422fba63a65ea5a7bda0
-msgid "In case only one band is necessary for visualization of the raster, single band drawing can be chosen - either gray levels or pseudocolor, see previous section::"
+#: ../source/raster.rst:103
+msgid ""
+"In case only one band is necessary for visualization of the raster, single "
+"band drawing can be chosen - either gray levels or pseudocolor, see previous "
+"section::"
 msgstr ""
 
-#: ../source/raster.rst:114
 # 3d8e54444cd14fa180accdf3c63ac2e1
+#: ../source/raster.rst:114
 msgid "Refresing Layers"
 msgstr ""
 
-#: ../source/raster.rst:116
 # 66491c35b2394d9ebf9126951b5e0167
-msgid "If you do change layer symbology and would like ensure that the changes are immediately visible to the user, call these methods::"
+#: ../source/raster.rst:116
+msgid ""
+"If you do change layer symbology and would like ensure that the changes are "
+"immediately visible to the user, call these methods::"
 msgstr ""
 
-#: ../source/raster.rst:121
 # d15afce3dc1f492cb5e86fe4602d9e2f
-msgid "The first call will ensure that the cached image of rendered layer is erased in case render caching is turned on. This functionality is available from QGIS 1.4, in previous versions this function does not exist - to make sure that the code works with all versions of QGIS, we first check whether the method exists."
+#: ../source/raster.rst:121
+msgid ""
+"The first call will ensure that the cached image of rendered layer is erased "
+"in case render caching is turned on. This functionality is available from "
+"QGIS 1.4, in previous versions this function does not exist - to make sure "
+"that the code works with all versions of QGIS, we first check whether the "
+"method exists."
 msgstr ""
 
-#: ../source/raster.rst:124
 # 1b6d59723854400a8cf5baec81690bca
-msgid "The second call emits signal that will force any map canvas containing the layer to issue a refresh."
+#: ../source/raster.rst:124
+msgid ""
+"The second call emits signal that will force any map canvas containing the "
+"layer to issue a refresh."
 msgstr ""
 
-#: ../source/raster.rst:126
 # 70ad06d961df448db2621a108ac4ee26
-msgid "In case you have changed layer symbology (see sections about raster and vector layers on how to do that), you might want to force QGIS to update the layer symbology in the layer list (legend) widget. This can be done as follows (``iface`` is an instance of QgisInterface)::"
+#: ../source/raster.rst:126
+msgid ""
+"In case you have changed layer symbology (see sections about raster and "
+"vector layers on how to do that), you might want to force QGIS to update the "
+"layer symbology in the layer list (legend) widget. This can be done as "
+"follows (``iface`` is an instance of QgisInterface)::"
 msgstr ""
 
-#: ../source/raster.rst:132
 # b568efc89ce34909a7b4d83f4f772f0b
+#: ../source/raster.rst:132
 msgid "Query Values"
 msgstr ""
 
-#: ../source/raster.rst:134
 # 8890e478fd4b4563bfb2fec19e39eb4b
-msgid "To do a query on value of bands of raster layer at some specified point::"
+#: ../source/raster.rst:134
+msgid ""
+"To do a query on value of bands of raster layer at some specified point::"
 msgstr ""
 
-#: ../source/raster.rst:140
 # af79636c79a8465595b7a986837b9d94
-msgid "The identify function returns True/False (to indicate succeess or failure) and a dictionary - keys are band names, values are the values at chosen point. Both key and value are QString instances so to see actual value you'll need to convert them to python strings (as shown in code snippet)."
+#: ../source/raster.rst:140
+msgid ""
+"The identify function returns True/False (to indicate succeess or failure) "
+"and a dictionary - keys are band names, values are the values at chosen "
+"point. Both key and value are QString instances so to see actual value "
+"you'll need to convert them to python strings (as shown in code snippet)."
 msgstr ""
-

@@ -8,26 +8,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyQGIS \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 12:01\n"
+"POT-Creation-Date: 2013-09-12 13:07\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../source/measure.rst:5
 # 99b3fb4521f146999307fa9dc8d66653
+#: ../source/measure.rst:5
 msgid "Measuring"
 msgstr ""
 
-#: ../source/measure.rst:7
 # 260fb13331c94713bf3355cbeba9b8f2
-msgid "To compute distances or areas, use :class:`QgsDistanceArea` class. If projections are turned off, calculations will be planar, otherwise they'll be done on ellipsoid. When ellipsoid is not set explicitly it uses WGS84 parameters for calculations. ::"
+#: ../source/measure.rst:7
+msgid ""
+"To compute distances or areas, use :class:`QgsDistanceArea` class. If "
+"projections are turned off, calculations will be planar, otherwise they'll "
+"be done on ellipsoid. When ellipsoid is not set explicitly it uses WGS84 "
+"parameters for calculations. ::"
 msgstr ""
 
-#: ../source/measure.rst:16
 # b596c7b5a4534c838546ff028e3d90a8
+#: ../source/measure.rst:16
 msgid "**TODO:** area, planar vs. ellipsoid"
 msgstr ""
-

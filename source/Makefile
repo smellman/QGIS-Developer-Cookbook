@@ -140,8 +140,13 @@ BASEDIR = $(TRANSLATIONDIR)/$(lang)/LC_MESSAGES
 
 gettext:
 	$(SPHINXBUILD) -b gettext $(I18NSPHINXOPTS) $(BUILDDIR)/i18npot
+	@echo
+	@echo "Build finished. If you update your locale, do 'make msgmerge'."
+
+msginit:
+	mkdir -p $(BASEDIR)
 	@for potfile in $(BUILDDIR)/i18npot/*; do \
-		mv $$potfile $(BASEDIR)/`basename $$potfile .pot`.po;\
+		msginit --locale=$(lang) --input=$$potfile --output=$(BASEDIR)/`basename $$potfile .pot`.po --no-translator;\
 	done
 	@echo
 	@echo "Build finished. The .po files are in $(BASEDIR)"
@@ -152,6 +157,13 @@ msgfmt:
 	done
 	@echo
 	@echo "Build finished. The .mo files are in $(BASEDIR)"
+
+msgmerge:
+	@for potfile in $(BUILDDIR)/i18npot/*; do \
+		msgmerge -U $(BASEDIR)/`basename $$potfile .pot`.po $$potfile;\
+	done
+	@echo
+	@echo "Build finished. The .po files are in $(BASEDIR)"
 
 changes:
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) $(BUILDDIR)/changes
