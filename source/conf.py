@@ -195,3 +195,6 @@ latex_documents = [
 #latex_use_modindex = True
 
 #todo_include_todos = True
+
+locale_dirs = ["./translated"]
+

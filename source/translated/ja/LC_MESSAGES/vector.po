@@ -1,0 +1,692 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 12:01\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../source/vector.rst:5
+# 42ec09eb02c8438985811170f69e1950
+msgid "Using Vector Layers"
+msgstr ""
+
+#: ../source/vector.rst:7
+# a6a13c635e1849b3a372c853bb419e8c
+msgid "This section summarizes various actions that can be done with vector layers."
+msgstr ""
+
+#: ../source/vector.rst:10
+#: ../source/vector.rst:93
+#: ../source/vector.rst:602
+# d5f3143962904fd1b026c6fae626aa09
+# 91f03cf9f1cb45188be9a786c33cbc3d
+# f2265312058b446cbb7b6bbcc82284de
+msgid "**TODO:**"
+msgstr ""
+
+#: ../source/vector.rst:10
+# c1df446782f64bc3b76048e128529d78
+msgid "Editing, Layer vs. Data provider, ..."
+msgstr ""
+
+#: ../source/vector.rst:13
+# ae3caa4e5b0a47149d5735c47b8eb30a
+msgid "Iterating over Vector Layer"
+msgstr ""
+
+#: ../source/vector.rst:15
+# 1693eedbc44c4fc6b9081a9dd92ad164
+msgid "Below is an example how to go through the features of the layer. To read features from layer, initialize the retieval with :func:`select` and then use :func:`nextFeature` calls::"
+msgstr ""
+
+#: ../source/vector.rst:57
+# fbd03322e65d4122b6b97b0ddfc1d0b8
+msgid ":func:`select` gives you flexibility in what data will be fetched. It can get 4 arguments, all of them are optional:"
+msgstr ""
+
+#: ../source/vector.rst:59
+# 8519f881a2424bc791024e3512cbd2d7
+msgid "fetchAttributes"
+msgstr ""
+
+#: ../source/vector.rst:60
+# b2a7b6627a4c40a28ab69f4582f59bc5
+msgid "List of attributes which should be fetched. Default: empty list"
+msgstr ""
+
+#: ../source/vector.rst:61
+# 689f03927b3c4f1ea8850b39e4c962fc
+msgid "rect"
+msgstr ""
+
+#: ../source/vector.rst:62
+# c639d17bc7dc4a52b8f80966e8f701d0
+msgid "Spatial filter. If empty rect is given (:obj:`QgsRectangle()`), all features are fetched. Default: empty rect"
+msgstr ""
+
+#: ../source/vector.rst:63
+# dadca257309242d5b2d32a92ce4a1a98
+msgid "fetchGeometry"
+msgstr ""
+
+#: ../source/vector.rst:64
+# e913ac13b3434520a99933e18650fb8d
+msgid "Whether geometry of the feature should be fetched. Default: :const:`True`"
+msgstr ""
+
+#: ../source/vector.rst:67
+# 6577a5cd26564e529e9c4a77b94ee1c6
+msgid "useIntersect"
+msgstr ""
+
+#: ../source/vector.rst:66
+# 8d7d1b1e970e44a2b7af0ab009cb6184
+msgid "When using spatial filter, this argument says whether accurate test for intersection should be done or whether test on bounding box suffices. This is needed e.g. for feature identification or selection. Default: :const:`False`"
+msgstr ""
+
+#: ../source/vector.rst:69
+# 897e5ce9ebde4f07b5fae9841c90a163
+msgid "Some examples::"
+msgstr ""
+
+#: ../source/vector.rst:81
+# d1cd5a0c93b3494ab98ad4570632024f
+msgid "To obtain field index from its name, use provider's :func:`fieldNameIndex` function::"
+msgstr ""
+
+#: ../source/vector.rst:90
+# 22745590a48d490491a692529510f20f
+msgid "Using Spatial Index"
+msgstr ""
+
+#: ../source/vector.rst:93
+# c2eed645e7224c6c993c13d236679739
+msgid "Intro to spatial indexing"
+msgstr ""
+
+#: ../source/vector.rst:95
+# a89ce60be7ad4c4a867b79b2df759ae6
+msgid "create spatial index - the following code creates an empty index::"
+msgstr ""
+
+#: ../source/vector.rst:99
+# 8e18283ce931495eb6fb82b71a4947e0
+msgid "add features to index - index takes :class:`QgsFeature` object and adds it to the internal data structure. You can create the object manually or use one from previous call to provider's :func:`nextFeature()` ::"
+msgstr ""
+
+#: ../source/vector.rst:104
+# 3d4f86abb4024c89aba088d5ac3c7225
+msgid "once spatial index is filled with some values, you can do some queries::"
+msgstr ""
+
+#: ../source/vector.rst:117
+# 81624ad3c2194fc0bd955fe9e68c788e
+msgid "Writing Vector Layers"
+msgstr ""
+
+#: ../source/vector.rst:119
+# 727c7b38cfed4d73b52d23069639b068
+msgid "You can write vector layer files using :class:`QgsVectorFileWriter` class. It supports any other kind of vector file that OGR supports (shapefiles, GeoJSON, KML and others)."
+msgstr ""
+
+#: ../source/vector.rst:121
+# 98804b6f09584f78ab997407055e07ab
+msgid "There are two possibilities how to export a vector layer:"
+msgstr ""
+
+#: ../source/vector.rst:123
+# b730d3fb15ea4d4c93b4218da1d9569d
+msgid "from an instance of :class:`QgsVectorLayer`::"
+msgstr ""
+
+#: ../source/vector.rst:134
+# e1ca4a1f1fac4e75a8d38a28be0279de
+msgid "Third parameter specifies output text encoding. Only some drivers need this for correct operation - shapefiles are one of those - however in case you are not using international characters you do not have to care much about the encoding. The fourth parameter that we left as None may specify destination CRS - if a valid instance of :class:`QgsCoordinateReferenceSystem` is passed, the layer is transformed to that CRS."
+msgstr ""
+
+#: ../source/vector.rst:138
+# ae1de43a5dc2413797e053e48f4769b0
+msgid "For valid driver names please consult the `supported formats by OGR`_ - you should pass the value in \"Code\" column as the driver name. Optionally you can set whether to export only selected features, pass further driver-specific options for creation or tell the writer not to create attributes - look into the documentation for full syntax."
+msgstr ""
+
+#: ../source/vector.rst:145
+# f4aebc6f6e4149b394fbc3aed0502ff2
+msgid "directly from features::"
+msgstr ""
+
+#: ../source/vector.rst:175
+# 14eca9e5da8241b29dccebce8dd2b609
+msgid "Memory Provider"
+msgstr ""
+
+#: ../source/vector.rst:177
+# 269314e26dd546418aaafbcd82f5379d
+msgid "Memory provider is intended to be used mainly by plugin or 3rd party app developers. It does not store data on disk, allowing developers to use it as a fast backend for some temporary layers."
+msgstr ""
+
+#: ../source/vector.rst:180
+# 70c43581be7d466bb727ddc9de179f82
+msgid "The provider supports string, int and double fields."
+msgstr ""
+
+#: ../source/vector.rst:182
+# e25e4baa8a87408481bdc4515f66d861
+msgid "The memory provider also supports spatial indexing, which is enabled by calling the provider's :func:`createSpatialIndex` function. Once the spatial index is created you will be able to iterate over features within smaller regions faster (since it's not necessary to traverse all the features, only those in specified rectangle)."
+msgstr ""
+
+#: ../source/vector.rst:186
+# 050dda42e0694bb8b37c17a3ade12407
+msgid "A memory provider is created by passing ``\"memory\"`` as the provider string to the :class:`QgsVectorLayer` constructor."
+msgstr ""
+
+#: ../source/vector.rst:188
+# 1cedbeb751bb48878bd4415fa0b4f2bb
+msgid "The constructor also takes a URI defining the geometry type of the layer, one of: ``\"Point\"``, ``\"LineString\"``, ``\"Polygon\"``, ``\"MultiPoint\"``, ``\"MultiLineString\"``, or ``\"MultiPolygon\"``."
+msgstr ""
+
+#: ../source/vector.rst:191
+# 9ef4dc042d6546f9ae251a5a73ba9289
+msgid "From QGIS version 1.7 the URI can also specify the coordinate reference system, fields, and indexing of the memory provider in the URI. The syntax is:"
+msgstr ""
+
+#: ../source/vector.rst:197
+# c553fda258ba43888228aac315f73833
+msgid "crs=definition"
+msgstr ""
+
+#: ../source/vector.rst:196
+# 372c949e7b2e4d53a7b29fa39494b636
+msgid "Specifies the coordinate reference system, where definition may be any of the forms accepted by :func:`QgsCoordinateReferenceSystem.createFromString`"
+msgstr ""
+
+#: ../source/vector.rst:200
+# 1877b81bce024a288e967e8872bcfb5d
+msgid "index=yes"
+msgstr ""
+
+#: ../source/vector.rst:200
+# 252b27e3efee49ff8c73560ae87c129b
+msgid "Specifies that the provider will use a spatial index"
+msgstr ""
+
+#: ../source/vector.rst:205
+# 73cc6d3837974fc6af3e05b34e155b49
+msgid "field=name:type(length,precision)"
+msgstr ""
+
+#: ../source/vector.rst:203
+# 2904b1f7d4be4dc0a2d36c87d03ff583
+msgid "Specifies an attribute of the layer.  The attribute has a name, and optionally a type (integer, double, or string), length, and precision. There may be multiple field definitions."
+msgstr ""
+
+#: ../source/vector.rst:207
+# ff5e1eb8097a444ab3421f58865bc8b4
+msgid "The following example of a URI incorporates all these options::"
+msgstr ""
+
+#: ../source/vector.rst:211
+# ddfccfda09054e0aa76c3a1a6efb7945
+msgid "The following example code illustrates creating and populating a memory provider::"
+msgstr ""
+
+#: ../source/vector.rst:234
+# 9b3c7cad7a79424394405c9bf88565a9
+msgid "Finally, let's check whether everything went well::"
+msgstr ""
+
+#: ../source/vector.rst:250
+# ec4e8c9ab0194ae698677d51d62bb905
+msgid "Appearance (Symbology) of Vector Layers"
+msgstr ""
+
+#: ../source/vector.rst:252
+# 1d52cb99192540abbebb612fabd234b4
+msgid "When a vector layer is being rendered, the appearance of the data is given by **renderer** and **symbols** associated with the layer. Symbols are classes which take care of drawing of visual representation of features, while renderers determine what symbol will be used for a particular feature."
+msgstr ""
+
+#: ../source/vector.rst:255
+# 983416170c1044ab9fb80838f058b5f0
+msgid "In QGIS v1,4 a new vector rendering stack has been introduced in order to overcome the limitations of the original implementation. We refer to it as new symbology or symbology-ng (new generation), the original rendering stack is also called old symbology. Each vector layer uses either new symbology or old symbology, but never both at once or neither of them. It's not a global setting for all layers, so some layers might use new symbology while others still use old symbology. In QGIS options the user can specify what symbology should be used by default when layers are loaded. The old symbology will be kept in further QGIS v1.x releases for compatibility and we plan to remove it in QGIS v2.0."
+msgstr ""
+
+#: ../source/vector.rst:262
+# 4f9409372bf54c0a9e2ad3dd22875368
+msgid "How to find out which implementation is currently in use::"
+msgstr ""
+
+#: ../source/vector.rst:272
+# caa827e8e8044b0faace38286ed48e59
+msgid "Note: if you plan to support also earlier versions (i.e. QGIS < 1.4), you should first check whether the :func:`isUsingRendererV2` method exists -- if not, only old symbology is available::"
+msgstr ""
+
+#: ../source/vector.rst:278
+# e4c7a934a4d544a49afc546bbce907b1
+msgid "We are going to focus primarily on new symbology because it has better capabilities are more options for customization."
+msgstr ""
+
+#: ../source/vector.rst:282
+# b90153103ef344788e1d3fdfeb7dfa84
+msgid "New Symbology"
+msgstr ""
+
+#: ../source/vector.rst:284
+# 7093af22438342beab17e7ae1ca66355
+msgid "Now that we have a reference to a renderer from the previous section, let us explore it a bit::"
+msgstr ""
+
+#: ../source/vector.rst:288
+# de9433e6ee954fe3a6a9ae1523f9897b
+msgid "There are several known renderer types available in QGIS core library:"
+msgstr ""
+
+#: ../source/vector.rst:291
+# 82167398610f4b4694e37a9558d1fb68
+msgid "Type"
+msgstr ""
+
+#: ../source/vector.rst:291
+# 2795d14f15f1408aba9ed87a401f748f
+msgid "Class"
+msgstr ""
+
+#: ../source/vector.rst:291
+# 8f217bff8e5c4b68932255f9e0c19294
+msgid "Description"
+msgstr ""
+
+#: ../source/vector.rst:293
+# b9ff7699917642ab84200a869d1052b5
+msgid "singleSymbol"
+msgstr ""
+
+#: ../source/vector.rst:293
+# ddb58276b7eb42218cbe0f6bb0ee9bd0
+msgid ":class:`QgsSingleSymbolRendererV2`"
+msgstr ""
+
+#: ../source/vector.rst:293
+# 660fb3b5537b4f42906cdf57d490e099
+msgid "Renders all features with the same symbol"
+msgstr ""
+
+#: ../source/vector.rst:294
+# 33664e1496a6439bb7bdd0bee80fb324
+msgid "categorizedSymbol"
+msgstr ""
+
+#: ../source/vector.rst:294
+# 72f6b1ec2ece4b54a2fbb4ce66625847
+msgid ":class:`QgsCategorizedSymbolRendererV2`"
+msgstr ""
+
+#: ../source/vector.rst:294
+# 9a0a62ac7aed47c9a485109096003aa4
+msgid "Renders features using a different symbol for each category"
+msgstr ""
+
+#: ../source/vector.rst:295
+# 3c58ff8c96df4c5091c40b3f78935b57
+msgid "graduatedSymbol"
+msgstr ""
+
+#: ../source/vector.rst:295
+# 2307eca7a76f418f8d45d3a363dbe851
+msgid ":class:`QgsGraduatedSymbolRendererV2`"
+msgstr ""
+
+#: ../source/vector.rst:295
+# 37ce37e2079c40a383a80879aac078e2
+msgid "Renders features using a different symbol for each range of values"
+msgstr ""
+
+#: ../source/vector.rst:298
+# 87d0df181cbf4514bf7056e7b86455b2
+msgid "There might be also some custom renderer types, so never make an assumption there are just these types. You can query :class:`QgsRendererV2Registry` singleton to find out currently available renderers."
+msgstr ""
+
+#: ../source/vector.rst:301
+# ca4cd3590d6548da9c2eccef30ce3151
+msgid "It is possible to obtain a dump of a renderer contents in text form - can be useful for debugging::"
+msgstr ""
+
+#: ../source/vector.rst:307
+# 6d0111cb145542d3b97f71ac2ab3174d
+msgid "Single Symbol Renderer"
+msgstr ""
+
+#: ../source/vector.rst:309
+# 2b2b4eca66d143058e294a03ca1096ee
+msgid "You can get the symbol used for rendering by calling :func:`symbol` method and change it with :func:`setSymbol` method (note for C++ devs: the renderer takes ownership of the symbol.)"
+msgstr ""
+
+#: ../source/vector.rst:313
+# 1b5b654c23fd4e97a1d36db5ce5409a7
+msgid "Categorized Symbol Renderer"
+msgstr ""
+
+#: ../source/vector.rst:315
+# 8e1e53948b624c388ec523451ccc9a61
+msgid "You can query and set attribute name which is used for classification: use :func:`classAttribute` and :func:`setClassAttribute` methods."
+msgstr ""
+
+#: ../source/vector.rst:317
+# c6cfe28c2fe74a1a8d350bb51c678521
+msgid "To get a list of categories::"
+msgstr ""
+
+#: ../source/vector.rst:322
+# 5135a0ce1b9f4ecaa900e8c9f11c4f04
+msgid "Where :func:`value` is the value used for discrimination between categories, :func:`label` is a text used for category description and :func:`symbol` method returns assigned symbol."
+msgstr ""
+
+#: ../source/vector.rst:325
+# d8fc3d2e7d7947a5bd71471e47b8c928
+msgid "The renderer usually stores also original symbol and color ramp which were used for the classification: :func:`sourceColorRamp` and :func:`sourceSymbol` methods."
+msgstr ""
+
+#: ../source/vector.rst:329
+# 0b1095d532c44b1b8ca6113b29de4322
+msgid "Graduated Symbol Renderer"
+msgstr ""
+
+#: ../source/vector.rst:331
+# 8468b764d0b947bd8d2dc2d967c0f697
+msgid "This renderer is very similar to the categorized symbol renderer described above, but instead of one attribute value per class it works with ranges of values and thus can be used only with numerical attributes."
+msgstr ""
+
+#: ../source/vector.rst:334
+# e0900d6d2cca424cab0fc6baf65f3ee5
+msgid "To find out more about ranges used in the renderer::"
+msgstr ""
+
+#: ../source/vector.rst:339
+# 4e94861bacd24c4a89876195dab5bf55
+msgid "You can again use :func:`classAttribute` to find out classification attribute name, :func:`sourceSymbol` and :func:`sourceColorRamp` methods. Additionally there is :func:`mode` method which determines how the ranges were created: using equal intervals, quantiles or some other method."
+msgstr ""
+
+#: ../source/vector.rst:344
+# 24f0d65c5f4e4b22bce10bbf74026d7e
+msgid "Working with Symbols"
+msgstr ""
+
+#: ../source/vector.rst:346
+# 82074c7124d44441ab4d94c00b9c80f7
+msgid "For representation of symbols, there is :class:`QgsSymbolV2` base class with three derived classes:"
+msgstr ""
+
+#: ../source/vector.rst:348
+# 455f923b53e94bb6a4eeb633f63c165b
+msgid ":class:`QgsMarkerSymbolV2` - for point features"
+msgstr ""
+
+#: ../source/vector.rst:349
+# b26c8059d4e94b259d0e9d112e3b6b3e
+msgid ":class:`QgsLineSymbolV2` - for line features"
+msgstr ""
+
+#: ../source/vector.rst:350
+# c1c2d4b2e8b84baf9b766414d4c942b6
+msgid ":class:`QgsFillSymbolV2` - for polygon features"
+msgstr ""
+
+#: ../source/vector.rst:352
+# de9db3fdb6ac41689c9a7ec1bfca2c0e
+msgid "**Every symbol consists of one or more symbol layers** (classes derived from :class:`QgsSymbolLayerV2`). The symbol layers do the actual rendering, the symbol class itself serves only as a container for the symbol layers."
+msgstr ""
+
+#: ../source/vector.rst:355
+# 460e407c4955423ca2d6383573cc5c15
+msgid "Having an instance of a symbol (e.g. from a renderer), it is possible to explore it: :func:`type` method says whether it is a marker, line or fill symbol. There is a :func:`dump` method which returns a brief description of the symbol. To get a list of symbol layers::"
+msgstr ""
+
+#: ../source/vector.rst:362
+# 084c8631b1f5438bac9646ce8b4c34bc
+msgid "To find out symbol's color use :func:`color` method and :func:`setColor` to change its color. With marker symbols additionally you can query for the symbol size and rotation with :func:`size` and :func:`angle` methods, for line symbols there is :func:`width` method returning line width."
+msgstr ""
+
+#: ../source/vector.rst:366
+# 000ed9767c954b7faecb6a702a6146e1
+msgid "Size and width are in millimeters by default, angles are in degrees."
+msgstr ""
+
+#: ../source/vector.rst:369
+# e9b7cb9d00b44762bc855871377513aa
+msgid "Working with Symbol Layers"
+msgstr ""
+
+#: ../source/vector.rst:371
+# 03291c38cdfd4a3fb0dab1a9d43a02c0
+msgid "As said before, symbol layers (subclasses of :class:`QgsSymbolLayerV2`) determine the appearance of the features. There are several basic symbol layer classes for general use. It is possible to implement new symbol layer types and thus arbitrarily customize how features will be rendered. The :func:`layerType` method uniquely identifies the symbol layer class --- the basic and default ones are SimpleMarker, SimpleLine and SimpleFill symbol layers types. :class:`QgsSymbolLayerV2Registry` class manages a database of all available symbol layer types."
+msgstr ""
+
+#: ../source/vector.rst:376
+# a5742e8e890c449a906d24c78cd8c341
+msgid "To access symbol layer data, use its :func:`properties` method that returns a key-value dictionary of properties which determine the appearance. Each symbol layer type has a specific set of properties that it uses. Additionally, there are generic methods :func:`color`, :func:`size`, :func:`angle`, :func:`width` with their setter counterparts. Of course size and angle is available only for marker symbol layers and width for line symbol layers."
+msgstr ""
+
+#: ../source/vector.rst:383
+# 1437ff6d44bf43dabdadafb5fe1ffafa
+msgid "Creating Custom Symbol Layer Types"
+msgstr ""
+
+#: ../source/vector.rst:385
+# a4a519d006194d38acd016d9b2bee376
+msgid "Imagine you would like to customize the way how the data gets rendered. You can create your own symbol layer class that will draw the features exactly as you wish. Here is an example of a marker that draws red circles with specified radius::"
+msgstr ""
+
+#: ../source/vector.rst:418
+# 79a5e22c65e047659dfd6ae4de62516d
+msgid "The :func:`layerType` method determines the name of the symbol layer, it has to be unique among all symbol layers. Properties are used for persistence of attributes. :func:`clone` method must return a copy of the symbol layer with all attributes being exactly the same. Finally there are rendering methods: :func:`startRender` is called before rendering first feature, :func:`stopRender` when rendering is done. And :func:`renderPoint` method which does the rendering. The coordinates of the point(s) are already transformed to the output coordinates."
+msgstr ""
+
+#: ../source/vector.rst:423
+# 00d2ba87538d4c0787166ff8dd4da854
+msgid "For polylines and polygons the only difference would be in the rendering method: you would use :func:`renderPolyline` which receives a list of lines, resp. :func:`renderPolygon` which receives list of points on outer ring as a first parameter and a list of inner rings (or None) as a second parameter."
+msgstr ""
+
+#: ../source/vector.rst:426
+# 08e016cf80464527814e4140212e932b
+msgid "Usually it is convenient to add a GUI for setting attributes of the symbol layer type to allow users to customize the appearance: in case of our example above we can let user set circle radius. The following code implements such widget::"
+msgstr ""
+
+#: ../source/vector.rst:457
+# 17b0fc8f47cd4c6288c6f12f9b74c8bc
+msgid "This widget can be embedded into the symbol properties dialog. When the symbol layer type is selected in symbol properties dialog, it creates an instance of the symbol layer and an instance of the symbol layer widget. Then it calls :func:`setSymbolLayer` method to assign the symbol layer to the widget. In that method the widget should update the UI to reflect the attributes of the symbol layer. :func:`symbolLayer` function is used to retrieve the symbol layer again by the properties dialog to use it for the symbol."
+msgstr ""
+
+#: ../source/vector.rst:462
+# 09fa650312974734b572a19a3ea7870e
+msgid "On every change of attributes, the widget should emit :func:`changed()` signal to let the properties dialog update the symbol preview."
+msgstr ""
+
+#: ../source/vector.rst:464
+# a419bb410fe84deaba1fd892bd7073c3
+msgid "Now we are missing only the final glue: to make QGIS aware of these new classes. This is done by adding the symbol layer to registry. It is possible to use the symbol layer also without adding it to the registry, but some functionality will not work: e.g. loading of project files with the custom symbol layers or inability to edit the layer's attributes in GUI."
+msgstr ""
+
+#: ../source/vector.rst:468
+# c7a799de39b049a2b711f7bf01978e09
+msgid "We will have to create metadata for the symbol layer::"
+msgstr ""
+
+#: ../source/vector.rst:484
+# dbe114efc5644f078b27ace14580a6c2
+msgid "You should pass layer type (the same as returned by the layer) and symbol type (marker/line/fill) to the constructor of parent class. :func:`createSymbolLayer` takes care of creating an instance of symbol layer with attributes specified in the `props` dictionary. (Beware, the keys are QString instances, not \"str\" objects). And there is :func:`createSymbolLayerWidget` method which returns settings widget for this symbol layer type."
+msgstr ""
+
+#: ../source/vector.rst:489
+# ee63238fb05b4195a0f4945dc5e6219b
+msgid "The last step is to add this symbol layer to the registry --- and we are done."
+msgstr ""
+
+#: ../source/vector.rst:493
+# 6f990603f1884ca9bf28fd46c3617e7e
+msgid "Creating Custom Renderers"
+msgstr ""
+
+#: ../source/vector.rst:495
+# 66e4c553eaf646149580655e0517db2f
+msgid "It might be useful to create a new renderer implementation if you would like to customize the rules how to select symbols for rendering of features. Some use cases where you would want to do it: symbol is determined from a combination of fields, size of symbols changes depending on current scale etc."
+msgstr ""
+
+#: ../source/vector.rst:498
+# d2f88f5837054fc592cda19e6c56bd5c
+msgid "The following code shows a simple custom renderer that creates two marker symbols and chooses randomly one of them for every feature::"
+msgstr ""
+
+#: ../source/vector.rst:524
+# f0a94d0f7bea42a986488df63cc97068
+msgid "The constructor of parent :class:`QgsFeatureRendererV2` class needs renderer name (has to be unique among renderers). :func:`symbolForFeature` method is the one that decides what symbol will be used for a particular feature. :func:`startRender` and :func:`stopRender` take care of initialization/finalization of symbol rendering. :func:`usedAttributes` method can return a list of field names that renderer expects to be present. Finally :func:`clone` function should return a copy of the renderer."
+msgstr ""
+
+#: ../source/vector.rst:530
+# 18b6036aed1e40d7a57bbf40749eac6c
+msgid "Like with symbol layers, it is possible to attach a GUI for configuration of the renderer. It has to be derived from :class:`QgsRendererV2Widget`. The following sample code creates a button that allows user to set symbol of the first symbol::"
+msgstr ""
+
+#: ../source/vector.rst:557
+# 4a8fdf67d5304f6fb6f84d4b8e8c0739
+msgid "The constructor receives instances of the active layer (:class:`QgsVectorLayer`), the global style (:class:`QgsStyleV2`) and current renderer. If there is no renderer or the renderer has different type, it will be replaced with our new renderer, otherwise we will use the current renderer (which has already the type we need). The widget contents should be updated to show current state of the renderer. When the renderer dialog is accepted, widget's :func:`renderer` method is called to get the current renderer -- it will be assigned to the layer."
+msgstr ""
+
+#: ../source/vector.rst:562
+# 0b9cf9646c214e09ad0fabb642f64cc1
+msgid "The last missing bit is the renderer metadata and registration in registry, otherwise loading of layers with the renderer will not work and user will not be able to select it from the list of renderers. Let us finish our RandomRenderer example::"
+msgstr ""
+
+#: ../source/vector.rst:577
+# 7f6e6f50417d46559048d698d61cfefb
+msgid "Similarly as with symbol layers, abstract metadata constructor awaits renderer name, name visible for users and optionally name of renderer's icon. :func:`createRenderer` method passes :class:`QDomElement` instance that can be used to restore renderer's state from DOM tree. :func:`createRendererWidget` method creates the configuration widget. It does not have to be present or can return `None` if the renderer does not come with GUI."
+msgstr ""
+
+#: ../source/vector.rst:581
+# 43e1d456369f444aa7fa5f8cf7c5c504
+msgid "To associate an icon with the renderer you can assign it in :class:`QgsRendererV2AbstractMetadata` constructor as a third (optional) argument -- the base class constructor in the RandomRendererMetadata __init__ function becomes::"
+msgstr ""
+
+#: ../source/vector.rst:589
+# d6f77685b6864cd0a95a1a939f757082
+msgid "The icon can be associated also at any later time using :func:`setIcon` method of the metadata class. The icon can be loaded from a file (as shown above) or can be loaded from a `Qt resource <http://qt.nokia.com/doc/4.5/resources.html>`_ (PyQt4 includes .qrc compiler for Python)."
+msgstr ""
+
+#: ../source/vector.rst:593
+# 4be897170ae84abb9aab7961376df35e
+msgid "Further Topics"
+msgstr ""
+
+#: ../source/vector.rst:596
+# 9b37d387b6e646009ea1eee8716c1afb
+msgid "creating/modifying symbols"
+msgstr ""
+
+#: ../source/vector.rst:597
+# 4860a799f8eb4fa4ab62dcd1cda88f4d
+msgid "working with style (:class:`QgsStyleV2`)"
+msgstr ""
+
+#: ../source/vector.rst:598
+# ba0060559c0749c6b9eb4058f83c092f
+msgid "working with color ramps (:class:`QgsVectorColorRampV2`)"
+msgstr ""
+
+#: ../source/vector.rst:599
+# f83f19f86c3343738a36fc1826bfdf24
+msgid "rule-based renderer"
+msgstr ""
+
+#: ../source/vector.rst:600
+# dc4a2fab40244eaba70741fe49db26c6
+msgid "exploring symbol layer and renderer registries"
+msgstr ""
+
+#: ../source/vector.rst:605
+# 0c4281d806884abf963cb465e6e5f846
+msgid "Old Symbology"
+msgstr ""
+
+#: ../source/vector.rst:607
+# 7b4ac42acf9a423193a56b9725564159
+msgid "A symbol determines color, size and other properties of the feature. Renderer associated with the layer decides what symbol will be used for particular feature. There are four available renderers:"
+msgstr ""
+
+#: ../source/vector.rst:611
+# f14294f4c0984b0395421936c5b33ea5
+msgid "single symbol renderer (:class:`QgsSingleSymbolRenderer`) --- all features are rendererd with the same symbol."
+msgstr ""
+
+#: ../source/vector.rst:612
+# 1486acdf3a834d248e8bed0c64e1e2f4
+msgid "unique value renderer (:class:`QgsUniqueValueRenderer`) --- symbol for each feature is choosen from attribute value."
+msgstr ""
+
+#: ../source/vector.rst:613
+# 0144d26e8837465d938da12f88bb6316
+msgid "graduated symbol renderer (:class:`QgsGraduatedSymbolRenderer`) --- a symbol is applied to a subgroup (class) of features, which is calculated on a numeric field"
+msgstr ""
+
+#: ../source/vector.rst:614
+# eec4f05b03d24103b408333a9cadfd9a
+msgid "continuous color renderer (:class:`QgsContinuousSymbolRenderer`)"
+msgstr ""
+
+#: ../source/vector.rst:616
+# 81daae256563483a9bebae4b1c4c43a5
+msgid "How to create a point symbol::"
+msgstr ""
+
+#: ../source/vector.rst:626
+# 0a8466670c214aa9b889e3e53f29db65
+msgid "The :func:`setNamedPointSymbol` method determines the shape of the symbol. There are two classes: hardcoded symbols (prefixed ``hard:``) and SVG symbols (prefixed ``svg:``). The following hardcoded symbols are available: ``circle``, ``rectangle``, ``diamond``, ``pentagon``, ``cross``, ``cross2``, ``triangle``, ``equilateral_triangle``, ``star``, ``regular_star``, ``arrow``."
+msgstr ""
+
+#: ../source/vector.rst:631
+# 52f85205c1a2456cb3eeac670fd0b5f7
+msgid "How to create an SVG symbol::"
+msgstr ""
+
+#: ../source/vector.rst:637
+# dc1f5218d6224f6bac41e25bd4124703
+msgid "SVG symbols do not support setting colors, fill and line styles."
+msgstr ""
+
+#: ../source/vector.rst:639
+# 8791c46f76344db28ecd08530011a3ed
+msgid "How to create a line symbol::"
+msgstr ""
+
+#: ../source/vector.rst:643
+# 8c788849a10842b883e00b1df18f2dc0
+msgid "How to create a fill symbol::"
+msgstr ""
+
+#: ../source/vector.rst:647
+# 2fc08b6bbb644dfdb99ebaa06ff347a3
+msgid "Create a single symbol renderer::"
+msgstr ""
+
+#: ../source/vector.rst:652
+# 055b6a5d67dd4a23ac0328ad76fec529
+msgid "Assign the renderer to a layer::"
+msgstr ""
+
+#: ../source/vector.rst:656
+# 48c3882ba46d4553b6f0c84b296483e6
+msgid "Create unique value renderer::"
+msgstr ""
+
+#: ../source/vector.rst:660
+# 60c5f7d89ae64e0ca0286247be8ed73b
+msgid "Create graduated symbol renderer::"
+msgstr ""
+

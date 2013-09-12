@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 12:01\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../source/geometry.rst:5
+# 5fb63b5af71a41afbdd19d18a4c7f056
+msgid "Geometry Handling"
+msgstr ""
+
+#: ../source/geometry.rst:7
+# bf7c26d2730641b18ff62eeff7ea45c8
+msgid "Points, linestrings, polygons that represent a spatial feature are commonly referred to as geometries. In QGIS they are represented with :class:`QgsGeometry` class. All possible geometry types are nicely shown in `JTS discussion page <http://www.vividsolutions.com/jts/discussion.htm#spatialDataModel>`_."
+msgstr ""
+
+#: ../source/geometry.rst:11
+# 2dc75b35039243bca9915f1a6ec2d66a
+msgid "Sometimes one geometry is actually a collection of simple (single-part) geometries. Such a geometry is called multi-part geometry. If it contains just one type of simple geometry, we call it multi-point, multi-linestring or multi-polygon. For example, a country consisting of multiple islands can be represented as a multi-polygon."
+msgstr ""
+
+#: ../source/geometry.rst:15
+# 94886b3255f64fd789d8677b9d53c4e0
+msgid "The coordinates of geometries can be in any coordinate reference system (CRS). When fetching features from a layer, associated geometries will have coordinates in CRS of the layer."
+msgstr ""
+
+#: ../source/geometry.rst:20
+# dae29a6237d14d81b3d22468bc541e3a
+msgid "Geometry Construction"
+msgstr ""
+
+#: ../source/geometry.rst:22
+# 1438c4a57e1b43ed8851cdf98be9e487
+msgid "There are several options how to create a geometry:"
+msgstr ""
+
+#: ../source/geometry.rst:24
+# 03e8a8d989884a5ab783ac8a6d6a2b1d
+msgid "from coordinates::"
+msgstr ""
+
+#: ../source/geometry.rst:30
+# 81ec76120a7b45218ee98a3fadabe26f
+msgid "Coordinates are given using :class:`QgsPoint` class."
+msgstr ""
+
+#: ../source/geometry.rst:32
+# a56d0e856c024c35b29fa5aee4062092
+msgid "Polyline (Linestring) is represented by a list of points. Polygon is represented by a list of linear rings (i.e. closed linestrings). First ring is outer ring (boundary), optional subsequent rings are holes in the polygon."
+msgstr ""
+
+#: ../source/geometry.rst:35
+# 57d56f06da2541e2960cf83a6fde40fd
+msgid "Multi-part geometries go one level further: multi-point is a list of points, multi-linestring is a list of linestrings and multi-polygon is a list of polygons."
+msgstr ""
+
+#: ../source/geometry.rst:37
+# 75b278c9d1aa4b899c36df5fc05dc6ab
+msgid "from well-known text (WKT)::"
+msgstr ""
+
+#: ../source/geometry.rst:41
+# 27fcca7522e94134838f7aa30fc5844e
+msgid "from well-known binary (WKB)::"
+msgstr ""
+
+#: ../source/geometry.rst:48
+# a5be669e86da4a97871bf23611c5ca48
+msgid "Access to Geometry"
+msgstr ""
+
+#: ../source/geometry.rst:50
+# 784a688c16484620afd83370cd203a29
+msgid "First, you should find out geometry type, :func:`wkbType` method is the one to use --- it returns a value from QGis.WkbType enumeration::"
+msgstr ""
+
+#: ../source/geometry.rst:61
+# a77570193c6c4b8c9457135e38744a1a
+msgid "As an alternative, one can use :func:`type` method which returns a value from QGis.GeometryType enumeration. There is also a helper function :func:`isMultipart` to find out whether a geometry is multipart or not."
+msgstr ""
+
+#: ../source/geometry.rst:64
+# 4f82ad1c3a9d4fde9a4102c5dfc9bd72
+msgid "To extract information from geometry there are accessor functions for every vector type. How to use accessors::"
+msgstr ""
+
+#: ../source/geometry.rst:73
+# ed3ff665d8ef4744a8aed7448bf56317
+msgid "Note: the tuples (x,y) are not real tuples, they are :class:`QgsPoint` objects, the values are accessible with :func:`x` and :func:`y` methods."
+msgstr ""
+
+#: ../source/geometry.rst:76
+# 0153417adb5742dd8dc8368ada92c6b5
+msgid "For multipart geometries there are similar accessor functions: :func:`asMultiPoint`, :func:`asMultiPolyline`, :func:`asMultiPolygon()`."
+msgstr ""
+
+#: ../source/geometry.rst:80
+# aa3b88babe344157a72fa0d9c19857df
+msgid "Geometry Predicates and Operations"
+msgstr ""
+
+#: ../source/geometry.rst:82
+# 159b417b78994db6bf76949759a7c7b7
+msgid "QGIS uses GEOS library for advanced geometry operations such as geometry predicates (:func:`contains`, :func:`intersects`, ...) and set operations (:func:`union`, :func:`difference`, ...)"
+msgstr ""
+
+#: ../source/geometry.rst:86
+# 3b333a0593884697a1fd4f0872b9442a
+msgid "**TODO:**"
+msgstr ""
+
+#: ../source/geometry.rst:88
+# 8d96b56e560b4234a8263ef55831b9d9
+msgid ":func:`area`, :func:`length`, :func:`distance`"
+msgstr ""
+
+#: ../source/geometry.rst:89
+# 855c0b6ebe884b42abbbb68ba1401b84
+msgid ":func:`transform`"
+msgstr ""
+
+#: ../source/geometry.rst:90
+# 303b724e63d545dbbdbdb9196b6f0471
+msgid "available predicates and set operations"
+msgstr ""
+

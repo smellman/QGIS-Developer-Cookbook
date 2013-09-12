@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 12:01\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../source/settings.rst:5
+# a2137ff883224b70a1c76b9517e059cd
+msgid "Reading And Storing Settings"
+msgstr ""
+
+#: ../source/settings.rst:7
+# fb7dda7464a04411b0243bc550a20174
+msgid "Many times it is useful for a plugin to save some variables so that the user does not have to enter or select them again next time the plugin is run."
+msgstr ""
+
+#: ../source/settings.rst:9
+# 31e1e4f6c2534809b214100802e8c5fb
+msgid "These variables can be saved a retrieved with help of Qt and QGIS API. For each variable, you should pick a key that will be used to access the variable - for user's favourite color you could use key \"favourite_color\" or any other meaningful string. It is recommended to give some structure to naming of keys."
+msgstr ""
+
+#: ../source/settings.rst:13
+# d139135789174eae9784d764027d1cf5
+msgid "We can make difference between several types of settings:"
+msgstr ""
+
+#: ../source/settings.rst:15
+# e63b18a74ed344fc816a571de3e2f458
+msgid "**global settings** - they are bound to the user at particular machine. QGIS itself stores a lot of global settings, for example, main window size or default snapping tolerance. This functionality is provided directly by Qt framework by the means of QSettings class. By default, this class stores settings in system's \"native\" way of storing settings, that is - registry (on Windows), .plist file (on Mac OS X) or .ini file (on Unix). The `QSettings documentation <http://doc.qt.nokia.com/stable/qsettings.html>`_ is comprehensive, so we will provide just a simple example::"
+msgstr ""
+
+#: ../source/settings.rst:32
+# 129fd492304d4c85aa478e82c14c80d8
+msgid "Qt uses QVariant instances for variable values in setValue() and value() methods. Your values are automagically converted from Python to QVariant instances, however the conversion from QVariant to Python is not automatic: that's why we use the to*() methods. Few more things to note here:"
+msgstr ""
+
+#: ../source/settings.rst:35
+# 545aedbed4004e4cb899b8128fef39dd
+msgid "the second parameter to value() method is optional and states the default value if there is no previous value set"
+msgstr ""
+
+#: ../source/settings.rst:36
+# 0e38149117a043f68930b7dbac4ab508
+msgid "toString() returns a QString instance, not a Python string"
+msgstr ""
+
+#: ../source/settings.rst:37
+# 119f7e4567d34bee8c185ab09730127f
+msgid "toInt() and toDouble() return tuples (value, ok) - the second item indicates True if whether the conversion from QVariant to the number went fine - in this example we ignore that indicator and only take the value."
+msgstr ""
+
+#: ../source/settings.rst:41
+# 650ffe7a02fc4d78b92b59c41419699a
+msgid "**project settings** vary between different projects and therefore they are connected with a project file. Map canvas background or destination coordinate reference system (CRS) are examples - white background and WGS84 might be suitable for one project, while yellow background and UTM projection for another one. An example of usage follows::"
+msgstr ""
+
+#: ../source/settings.rst:55
+# 04e7cf4688e24ccc93991460ca16d447
+msgid "Hopefully the QgsProject class will be updated in future to provide API similar to the one of QSettings class. Due to some limitations of Python bindings, it is not possible to save floating point numbers."
+msgstr ""
+
+#: ../source/settings.rst:58
+# 73621b4b44e14a7f8d7d39699a66f54c
+msgid "**map layer settings** - these settings are related to a particular instance of a map layer with a project. They are *not* connected with underlying data source of a layer, so if you create two map layer instances of one shapefile, they will not share the settings. The settings are stored in project file, so if the user opens the project again, the layer-related settings will be there again. This functionality has been added in QGIS v1.4. The API is similar to QSettings - it takes and returns QVariant instances::"
+msgstr ""
+
+#: ../source/settings.rst:70
+# a6c4bc740d9446b6859b902ad460e5f0
+msgid "**TODO:**"
+msgstr ""
+
+#: ../source/settings.rst:71
+# 8362d2346a3c46f6b22fa3f71db3bdf2
+msgid "Keys for settings that can be shared among plugins"
+msgstr ""
+

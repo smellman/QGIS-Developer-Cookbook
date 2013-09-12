@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2010-2011, Martin Dobias
+# This file is distributed under the same license as the PyQGIS package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyQGIS \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-12 12:01\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../source/plugins.rst:5
+# 0f02a7b513184655b90e251d296a5e5c
+msgid "Developing Python Plugins"
+msgstr ""
+
+#: ../source/plugins.rst:8
+# 39bad4862bc749e08fba211cf0172adb
+msgid "It is possible to create plugins in Python programming language. In comparison with classical plugins written in C++ these should be easier to write, understand, maintain and distribute due the dynamic nature of the Python language."
+msgstr ""
+
+#: ../source/plugins.rst:13
+# 3fae8de41c9f4e7c811dfb4d2d28324c
+msgid "Python plugins are listed together with C++ plugins in QGIS plugin manager. They're being searched for in these paths:"
+msgstr ""
+
+#: ../source/plugins.rst:16
+# 8d6683eb750a4c3d8ae80ea184175f78
+msgid "UNIX/Mac: :file:`~/.qgis/python/plugins` and :file:`(qgis_prefix)/share/qgis/python/plugins`"
+msgstr ""
+
+#: ../source/plugins.rst:17
+# d0ddcdafdea348d5930da0489bc73c99
+msgid "Windows: :file:`~/.qgis/python/plugins` and :file:`(qgis_prefix)/python/plugins`"
+msgstr ""
+
+#: ../source/plugins.rst:19
+# 5b271b4455774f818a42e9a4d845d012
+msgid "Home directory (denoted by above :file:`~`) on Windows is usually something like :file:`C:\\\\Documents and Settings\\\\(user)`. Subdirectories of these paths are considered as Python packages that can be imported to QGIS as plugins."
+msgstr ""
+
+#: ../source/plugins.rst:23
+# fa13196b2cff4aa1ad07ac2b0fce7b55
+msgid "Steps:"
+msgstr ""
+
+#: ../source/plugins.rst:25
+# 8781d5687a294a18b594ee86ae6f8957
+msgid "*Idea*: Have an idea about what you want to do with your new QGIS plugin. Why do you do it? What problem do you want to solve? Is there already another plugin for that problem?"
+msgstr ""
+
+#: ../source/plugins.rst:30
+# 28b071595ded45f3a29c37b7b92497a2
+msgid "*Create files*: Create the files described next. A starting point (:file:`__init.py__`). A main python plugin body (:file:`plugin.py`). A form in QT-Designer (:file:`form.ui`), with its :file:`resources.qrc`."
+msgstr ""
+
+#: ../source/plugins.rst:35
+# 086a1edfa9fb47d58bf836d23c236ff1
+msgid "*Write code*: Write the code inside the :file:`plugin.py`"
+msgstr ""
+
+#: ../source/plugins.rst:37
+# 81879edf68ab4165a02c84422bf9e02a
+msgid "*Test*: Close and re-open QGIS and import your plugin again. Check if everything is OK."
+msgstr ""
+
+#: ../source/plugins.rst:40
+# fd48c79183ca46a9a8954ee777cbe4b6
+msgid "*Publish*: Publish your plugin in QGIS repository or make your own repository as an \"arsenal\" of personal \"GIS weapons\""
+msgstr ""
+
+#: ../source/plugins.rst:45
+# 99ab082598ad461dac8d0b480a3bb5f2
+msgid "Writing a plugin"
+msgstr ""
+
+#: ../source/plugins.rst:47
+# f80edc11b02b45429d72e144e3e148a7
+msgid "Since the introduction of python plugins in QGIS, a number of plugins have appeared - on `Plugin Repositories wiki page <http://www.qgis.org/wiki/Python_Plugin_Repositories>`_ you can find some of them, you can use their source to learn more about programming with PyQGIS or find out whether you are not duplicating development effort. Ready to create a plugin but no idea what to do? `Python Plugin Ideas wiki page <http://www.qgis.org/wiki/Python_Plugin_Ideas>`_\\ lists wishes from the community!"
+msgstr ""
+
+#: ../source/plugins.rst:56
+# 661cdea252be4c0b984219d06954db32
+msgid "Creating necessary files"
+msgstr ""
+
+#: ../source/plugins.rst:58
+# f2895456e21f4dada54958177ab7ae61
+msgid "Here's the directory structure of our example plugin::"
+msgstr ""
+
+#: ../source/plugins.rst:70
+# a35f6d11f38440dc85166203403495e4
+msgid "What is the meaning of the files:"
+msgstr ""
+
+#: ../source/plugins.rst:72
+# 2fe5868f8f104c6787898b80c485f6fa
+msgid "__init__.py = The starting point of the plugin. Contains general info, version, name and main class."
+msgstr ""
+
+#: ../source/plugins.rst:74
+# 2676d8fe15e74a0ab71ee4b20c7962cc
+msgid "plugin.py = The main working code of the plugin. Contains all the information about the actions of the plugin and the main code."
+msgstr ""
+
+#: ../source/plugins.rst:76
+# 2402f864c1914eb581b8ba584d68521d
+msgid "resources.qrc = The .xml document created by QT-Designer. Contains relative paths to resources of the forms."
+msgstr ""
+
+#: ../source/plugins.rst:78
+# 69eb1956f15a48f4823b2223e3c7ea08
+msgid "resources.py = The translation of the .qrc file described above to Python."
+msgstr ""
+
+#: ../source/plugins.rst:79
+# 96d1996afcb44cbc806b414c2a923a97
+msgid "form.ui = The GUI created by QT-Designer."
+msgstr ""
+
+#: ../source/plugins.rst:80
+# 9278591107f74da381fccf426a15151d
+msgid "form.py = The translation of the form.ui described above to Python."
+msgstr ""
+
+#: ../source/plugins.rst:81
+# e29cbb149bce4f34af4639992032553d
+msgid "metadata.txt = Required for QGIS >= 1.8.0. Containts general info, version, name and some other metadata used by plugins website and plugin infrastructure. Metadata in metadata.txt is preferred to the methods in __init__.py. If the text file is present, it is used to fetch the values. From QGIS 2.0 the metadata from __init__.py will not be accepted and the metadata.txt file will be required."
+msgstr ""
+
+#: ../source/plugins.rst:88
+# 304a405129a74dbf9eaae69ce8b987d6
+msgid "`Here <http://pyqgis.org/builder/plugin_builder.py>`_ and `there <http://www.dimitrisk.gr/qgis/creator/>`_ are two automated ways of creating the basic files (skeleton) of a typical QGIS Python plugin. Also there is a QGIS plugin called `Plugin Builder` that creates plugin template from QGIS and don't require internet connection. Useful to help you start with a typical plugin."
+msgstr ""
+
+#: ../source/plugins.rst:95
+# 430f0e2d1b714c48b96cb102412e0872
+msgid "Writing code"
+msgstr ""
+
+#: ../source/plugins.rst:98
+# 3ded534bbad14304adbbc7cb42fbcd72
+msgid "__init__.py"
+msgstr ""
+
+#: ../source/plugins.rst:100
+# 4cdf28c0b2d548fd9dd53f21912087ae
+msgid "First, plugin manager needs to retrieve some basic information about the plugin such as its name, description etc. File :file:`__init__.py` is the right place where to put this information::"
+msgstr ""
+
+#: ../source/plugins.rst:124
+# 91e14d74cbbf46fa931906b2091a7d3a
+msgid "In QGIS 1.9.90 plugins can be placed not only into `Plugins` menu but also into `Raster`, `Vector`, `Database` and `Web` menus. Therefore a new \"category\" metadata entry has been introduced. This metadata entry is used as tip for users and tells them where (in which menu) the plugin can be found. Allowed values for \"category\" are: Vector, Raster, Database, Web and Layers. For example, if your plugin will be available from `Raster` menu, add this to :file:`__init__.py`::"
+msgstr ""
+
+#: ../source/plugins.rst:136
+# 96fe99d4475f43d0b615bae19e41c523
+msgid "metadata.txt"
+msgstr ""
+
+#: ../source/plugins.rst:138
+# 00a230d04e6146c5962cc19bcecadbdc
+msgid "For QGIS >= 1.8 you need to add a metadata.txt (`see here <https://github.com/qgis/qgis-django/blob/master/qgis-app/plugins/docs/introduction.rst>`_) An exampe for this metadata.txt::"
+msgstr ""
+
+#: ../source/plugins.rst:180
+# 8406439a3c344109a9fd137f8d09f5cb
+msgid "plugin.py"
+msgstr ""
+
+#: ../source/plugins.rst:182
+# f5b4df74a7fa4ffb8dcd8f0793f631b3
+msgid "One thing worth mentioning is ``classFactory()`` function which is called when the plugin gets loaded to QGIS. It receives reference to instance of :class:`QgisInterface` and must return instance of your plugin - in our case it's called ``TestPlugin``. This is how should this class look like (e.g. :file:`testplugin.py`)::"
+msgstr ""
+
+#: ../source/plugins.rst:232
+# 83a2cd3edb8b4a25ba32da33377449d9
+msgid "If you use QGIS 1.9.90 or higher and want to place your plugin into one of the new menus (`Raster`, `Vector`, `Database` or `Web`), you should modify the code of the ``initGui()`` and ``unload()`` functions. Since these new menus are available only in QGIS 1.9.90, our first step is to check if the running QGIS version has all necessary functions. If the new menus are available, we will place our plugin under this menu, otherwise we will use the old `Plugins` menu. Here is an example for `Raster` menu::"
+msgstr ""
+
+#: ../source/plugins.rst:274
+# 039688b6525a45608e907bdd53e2a5c6
+msgid "A full list of methods that can be used to place plugin under these menus/toolbars is available in the `API docs <http://qgis.org/api/classQgisInterface.html>`_."
+msgstr ""
+
+#: ../source/plugins.rst:277
+# 6dd054d433e641589f0783afea5140b6
+msgid "The only plugin functions that must exist are ``initGui()`` and ``unload()``. These functions are called when the plugin is loaded and unloaded."
+msgstr ""
+
+#: ../source/plugins.rst:281
+# 4459406e8a9d499689832a09f8a2a837
+msgid "Resource File"
+msgstr ""
+
+#: ../source/plugins.rst:283
+# bf7c11f3d90e4ba09e2d62ef8da8ffdc
+msgid "You can see that in ``initGui()`` we've used an icon from the resource file (called :file:`resources.qrc` in our case)::"
+msgstr ""
+
+#: ../source/plugins.rst:292
+# 93de8d6667a44d078a36c0e4d1539095
+msgid "It is good to use a prefix that will not collide with other plugins or any parts of QGIS, otherwise you might get resources you did not want. Now you just need to generate a Python file that will contain the resources. It's done with :command:`pyrcc4` command::"
+msgstr ""
+
+#: ../source/plugins.rst:299
+# 00073609d4c34ae39f7cfa2e53715b41
+msgid "And that's all... nothing complicated :) If you've done everything correctly you should be able to find and load your plugin in plugin manager and see a message in console when toolbar icon or appopriate menu item is selected."
+msgstr ""
+
+#: ../source/plugins.rst:304
+# 2b3d4f30b76444b7bb576508cd9fab20
+msgid "When working on a real plugin it's wise to write the plugin in another (working) directory and create a makefile which will generate UI + resource files and install the plugin to your QGIS installation."
+msgstr ""
+
+#: ../source/plugins.rst:309
+# 3bc4eb3735d3409d87ae8f11716a6aa0
+msgid "Documentation"
+msgstr ""
+
+#: ../source/plugins.rst:311
+# 6cb999ce1ed8408996d2ce85d75fbc71
+msgid "*This documentation method requires Qgis version 1.5.*"
+msgstr ""
+
+#: ../source/plugins.rst:313
+# 459b53413cbb4d21a7c1cbcce5b6a9f7
+msgid "The documentation for the plugin can be written as HTML help files. The :mod:`qgis.utils` module provides a function, :func:`showPluginHelp` which will open the help file users browser, in the same way as other QGIS help."
+msgstr ""
+
+#: ../source/plugins.rst:317
+# de580602ed6d47a099c1b67db6de0a15
+msgid "The :func:`showPluginHelp`` function looks for help files in the same directory as the calling module. It will look for, in turn, :file:`index-ll_cc.html`, :file:`index-ll.html`, :file:`index-en.html`, :file:`index-en_us.html` and :file:`index.html`, displaying whichever it finds first. Here ``ll_cc`` is the QGIS locale. This allows multiple translations of the documentation to be included with the plugin."
+msgstr ""
+
+#: ../source/plugins.rst:324
+# 08d843c7224e447e9659cc29bc83e2a3
+msgid "The :func:`showPluginHelp` function can also take parameters packageName, which identifies a specific plugin for which the help will be displayed, filename, which can replace \"index\" in the names of files being searched, and section, which is the name of an html anchor tag in the document on which the browser will be positioned."
+msgstr ""
+
+#: ../source/plugins.rst:331
+# 37bb3ff4161043efa3fbea757c09bdb6
+msgid "Code Snippets"
+msgstr ""
+
+#: ../source/plugins.rst:333
+# d5f3eb7cbec048f381efbb16498a573f
+msgid "This section features code snippets to facilitate plugin development."
+msgstr ""
+
+#: ../source/plugins.rst:336
+# 46b4844bf64c41709dce6b7649b824ce
+msgid "How to call a method by a key shortcut"
+msgstr ""
+
+#: ../source/plugins.rst:338
+# d74739394be44e0eb2202985ee25112c
+msgid "In the plug-in add to the ``initGui()``::"
+msgstr ""
+
+#: ../source/plugins.rst:345
+# 5b48763aaff34c4a99e4e1ea424b7e7d
+msgid "To ``unload()`` add::"
+msgstr ""
+
+#: ../source/plugins.rst:349
+# 2e4acb81d61b4df9977d3b286499e09e
+msgid "The method that is called when F7 is pressed::"
+msgstr ""
+
+#: ../source/plugins.rst:355
+# 6f7e88d5db944b2cb3bf69e6923925a0
+msgid "How to toggle Layers (work around)"
+msgstr ""
+
+#: ../source/plugins.rst:357
+# 95ad23f63e134739a9093b5581f41b85
+msgid "*Note:* from QGIS 1.5 there is :class:`QgsLegendInterface` class that allows some manipulation with list of layers within legend."
+msgstr ""
+
+#: ../source/plugins.rst:360
+# 81fc0c57b67b4b1c9a6acfa1743d2526
+msgid "As there is currently no method to directly access the layers in the legend, here is a workaround how to toggle the layers using layer transparency::"
+msgstr ""
+
+#: ../source/plugins.rst:370
+# 85e7b1539e2c48788efa3c8c065920c8
+msgid "The method requires the layer number (0 being the top most) and can be called by::"
+msgstr ""
+
+#: ../source/plugins.rst:375
+# 639cc8cf745340868e118fed9b31ea9f
+msgid "How to access attribute table of selected features"
+msgstr ""
+
+#: ../source/plugins.rst:399
+# 0b04c8dea6dc4725a7fbbd85c9081275
+msgid "The method requires the one parameter (the new value for the attribute field of the selected feature(s)) and can be called by::"
+msgstr ""
+
+#: ../source/plugins.rst:406
+# 47888850a08d44d3920dcfcdde420b60
+msgid "How to debug a plugin using PDB"
+msgstr ""
+
+#: ../source/plugins.rst:408
+# 1a331d238b9b4cfc9a8f8faafad8b200
+msgid "First add this code in the spot where you would like to debug::"
+msgstr ""
+
+#: ../source/plugins.rst:416
+# 84b03f45eedf4ca88093d431b31a89e4
+msgid "Then run QGIS from the command line."
+msgstr ""
+
+#: ../source/plugins.rst:418
+# 8e47e8d83ee54ad9b78c559486c98815
+msgid "On Linux do:"
+msgstr ""
+
+#: ../source/plugins.rst:420
+# 27dcdae3422b4ec3a7d10b324abc9a20
+msgid ":command:`$ ./Qgis`"
+msgstr ""
+
+#: ../source/plugins.rst:422
+# 6a1c781a9ac4478b89e7c00a89abc028
+msgid "On Mac OS X do:"
+msgstr ""
+
+#: ../source/plugins.rst:424
+# 5c83cc5eb7a0474a96034cedb1456f3e
+msgid ":command:`$ /Applications/Qgis.app/Contents/MacOS/Qgis`"
+msgstr ""
+
+#: ../source/plugins.rst:426
+# 4a9b5c4039954078a54edf9443f81478
+msgid "And when the application hits your breakpoint you can type in the console!"
+msgstr ""
+
+#: ../source/plugins.rst:429
+# 1d7bfa23668e414f87a0c44e5f5952ec
+msgid "Testing"
+msgstr ""
+
+#: ../source/plugins.rst:432
+# 7e843e7c02cc4fc191d8dfd9fb0f47a8
+msgid "Releasing the plugin"
+msgstr ""
+
+#: ../source/plugins.rst:434
+# 5cfbdcf86b134f349c6b28ae19221cd8
+msgid "Once your plugin is ready and you think the plugin could be helpful for some people, do not hesitate to upload it to `PyQGIS plugin repository <http://pyqgis.org/>`_. On that page you can find also packaging guidelines how to prepare the plugin to work well with the plugin installer. Or in case you would like to set up your own plugin repository, create a simple XML file that will list the plugins and their metadata, for examples see other `plugin repositories <http://www.qgis.org/wiki/Python_Plugin_Repositories>`_."
+msgstr ""
+
+#: ../source/plugins.rst:442
+# 8f49e262d7f9437f99528bb765a00771
+msgid "Remark: Configuring Your IDE on Windows"
+msgstr ""
+
+#: ../source/plugins.rst:444
+# 9d60072370de4d68bf192abb90011ef3
+msgid "On Linux there is no additional configuration needed to develop plug-ins. But on Windows you need to make sure you that you have the same environment settings and use the same libraries and interpreter as QGIS. The fastest way to do this, is to modify the startup batch file of QGIS."
+msgstr ""
+
+#: ../source/plugins.rst:449
+# ea32afaa16ba49a5bfef27ee62778eea
+msgid "If you used the OSGeo4W Installer, you can find this under the bin folder of your OSGoeW install. Look for something like :file:`C:\\\\OSGeo4W\\\\bin\\\\qgis-unstable.bat`."
+msgstr ""
+
+#: ../source/plugins.rst:452
+# 0f71afd5786f41888e155f51715891ec
+msgid "I will illustrate how to set up the `Pyscripter IDE <http://code.google.com/p/pyscripter>`_. Other IDEs might require a slightly different approach:"
+msgstr ""
+
+#: ../source/plugins.rst:455
+# 0e361e09480e4e05ab1a646113de6474
+msgid "Make a copy of qgis-unstable.bat and rename it pyscripter.bat."
+msgstr ""
+
+#: ../source/plugins.rst:456
+# e4513c3282864436b5afbf8a18f8d47c
+msgid "Open it in an editor. And remove the last line, the one that starts qgis."
+msgstr ""
+
+#: ../source/plugins.rst:457
+# 439959dc20464289a05e91ddda06e78c
+msgid "Add a line that points to the your pyscripter executable and add the commandline argument that sets the version of python to be used, in version 1.3 of qgis this is python 2.5."
+msgstr ""
+
+#: ../source/plugins.rst:460
+# 40dc4508d44d422583c728cb9ba876f2
+msgid "Also add the argument that points to the folder where pyscripter can find the python dll used by qgis, you can find this under the bin folder of your OSGeoW install::"
+msgstr ""
+
+#: ../source/plugins.rst:472
+# d6b277c416aa4870837fb7f175106846
+msgid "Now when you double click this batch file and it will start pyscripter."
+msgstr ""
+
