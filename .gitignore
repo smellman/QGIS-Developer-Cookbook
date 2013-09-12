@@ -1,0 +1,4 @@
+*.mo
+build/doctrees
+build/html
+build/i18npot/.doctrees
